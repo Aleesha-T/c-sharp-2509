@@ -8,8 +8,7 @@ namespace SampleConsoleApp
 {
     internal class Assignments03_10
     {
-        static void Main(string[] args)
-        {
+    
             //Qn. 1 Multiplication table of a given number
             //Console.WriteLine("Enter a number"); //gets number
             //int number = Convert.ToInt32(Console.ReadLine());
@@ -606,6 +605,6 @@ namespace SampleConsoleApp
                 }
         Console.WriteLine("No. of digits is: " + count); //prints no. of digits
                 Console.ReadLine();*/
-        }
+        
     }
 }
