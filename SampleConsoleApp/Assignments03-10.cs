@@ -8,7 +8,8 @@ namespace SampleConsoleApp
 {
     internal class Assignments03_10
     {
-    
+       
+     
             //Qn. 1 Multiplication table of a given number
             //Console.WriteLine("Enter a number"); //gets number
             //int number = Convert.ToInt32(Console.ReadLine());
