@@ -529,7 +529,7 @@ namespace SampleConsoleApp
             //Console.ReadLine();
 
             //Qn. 35
-            Console.WriteLine("Enter your annual salary");
+            /*Console.WriteLine("Enter your annual salary");
             double salary = Convert.ToInt32(Console.ReadLine()); //gets salary
             Console.WriteLine("Enter your age");
             int age = Convert.ToInt32(Console.ReadLine()); //gets age
@@ -558,7 +558,7 @@ namespace SampleConsoleApp
                 double tax4 = (0.2 * salary) - 5000;
                 Console.WriteLine("Tax to be paid is: " + tax4); //outputs if salary greater than 50000 and age greater than or equal to 60
             }
-            Console.ReadLine();
+            Console.ReadLine(); */
         
     }
 }

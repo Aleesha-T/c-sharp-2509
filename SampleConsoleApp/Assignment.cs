@@ -603,7 +603,7 @@ namespace SampleConsoleApp
                 n = n / 10;
                 count++;
             }
-    Console.WriteLine("No. of digits is: " + count); //prints no. of digits
+        Console.WriteLine("No. of digits is: " + count); //prints no. of digits
             Console.ReadLine();
 
     }
