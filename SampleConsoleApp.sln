@@ -5,6 +5,14 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleConsoleApp", "SampleConsoleApp\SampleConsoleApp.csproj", "{6D6E02B4-1C46-4486-A2A6-1905CFF1FB71}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTMLAssignment", "HTMLAssignment", "{B592ED8C-5D25-4A56-8F94-00574A4B8C14}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		Assignment2.css = Assignment2.css
+		Assignment2.html = Assignment2.html
+		style.css = style.css
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

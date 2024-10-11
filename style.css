@@ -1,0 +1,16 @@
+﻿h1
+{
+    text-align:center;
+    color: darkblue;
+    font-family:'Times New Roman', Times, serif;
+}
+div
+{
+    font-weight:bold;
+}
+body{
+        margin:50px;
+}
+section{
+    margin:10px;
+    }
