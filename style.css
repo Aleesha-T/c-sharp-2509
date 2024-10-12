@@ -1,8 +1,13 @@
 ﻿h1
 {
     text-align:center;
-    color: darkblue;
+    color: darkviolet;
     font-family:'Times New Roman', Times, serif;
+    text-decoration:underline;
+    font-size:30px;
+  }
+h1:hover{
+    transform:scale(1.2);
 }
 div
 {
@@ -10,7 +15,19 @@ div
 }
 body{
         margin:50px;
-}
+        }
 section{
     margin:10px;
     }
+label{
+    font-size:18px;
+    text-decoration:underline;
+    color:darkslateblue;
+}
+.Intro{
+    background-color:lavenderblush;
+    padding:25px;
+}
+li:hover{
+    color:blue;
+}

@@ -7,6 +7,9 @@
     background-color: lavender;
     padding: 12px;
 }
+.Name:hover{
+    transform:scale(1.2);
+}
 .Tagline{
     text-align:center;
     font-weight: bold;
@@ -18,9 +21,12 @@ footer{
 }
 label {
     font-weight: bold;
-    font-size:16px;
+    font-size:18px;
 }
 body{
     background-color:white;
     margin:50px;
+}
+li:hover{
+    color:blue;
 }
