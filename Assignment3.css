@@ -1,0 +1,20 @@
+﻿body
+{
+    margin:25px;
+}
+header{
+    font-size:28px;
+}
+label{
+    font-size:18px;
+    font-weight:bold;
+}
+div{
+    text-align:center;
+}
+section{
+    text-align:center;
+}
+.rating{
+    text-align:right;
+}
