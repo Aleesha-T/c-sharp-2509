@@ -11,7 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTMLAssignment", "HTMLAssig
 		Assignment2.html = Assignment2.html
 		Assignment3.css = Assignment3.css
 		Assignment3.html = Assignment3.html
+		Assignment5.html = Assignment5.html
+		Assignment6.css = Assignment6.css
+		Assignment7.html = Assignment7.html
 		index.html = index.html
+		Assignment6.html = Assignment6.html
+		Blog.css = Blog.css
+		Blog.html = Blog.html
 		style.css = style.css
 	EndProjectSection
 EndProject

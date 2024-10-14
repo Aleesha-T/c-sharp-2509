@@ -1,0 +1,29 @@
+﻿header
+{
+    font-size:80px;
+    font-weight:bold;
+    text-align:center;
+    color:darkblue;
+}
+body {
+    margin: 40px;
+    background-image: url("new.png");
+    background-position: center;
+}
+.parent {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+}
+section{
+    text-align:center;
+}
+.child {
+    width: 300px;
+    border: 15px solid black;
+    padding: 50px;
+    margin: 20px;
+    background-color: white;
+}
+

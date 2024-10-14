@@ -1,0 +1,36 @@
+﻿.Title
+{
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+    color:darkblue;
+}
+.Date{
+    text-align:right;
+}
+body{
+    margin:30px;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:2%;
+}
+h5{
+    font-size:17px;
+}
+.Name{
+    color:darkorange;
+}
+label{
+    font-size:13px;
+    color:grey;
+}
+div{
+    text-align:center;
+}
+header{
+    background-color:aliceblue;
+    padding:20px;
+}
+header{
+    background:
+}
