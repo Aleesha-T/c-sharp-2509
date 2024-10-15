@@ -1,0 +1,21 @@
+﻿header
+{
+    font-size:30px;
+    font-weight:bold;
+    color:darkred;
+    text-align:center;
+    background-color:antiquewhite;
+    padding:20px;
+}
+body{
+    padding:50px;
+}
+.button{
+    text-align:center;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+}

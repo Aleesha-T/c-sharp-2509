@@ -1,0 +1,65 @@
+﻿body {
+    padding: 20px;
+    padding-inline: 50px;
+    background-image: linear-gradient(to bottom, white, #ADD8E6);
+    
+}
+header{
+    font-size:40px;
+    font-weight:bold;
+    color:darkblue;
+    text-align:center;
+}
+.container{
+    display:grid;
+    grid-template-columns:auto auto auto;
+    gap:40px;
+}
+.Basic {
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 30px;
+    width: 200px;
+    height: 300px;
+    align-content: center;
+    background-color: white;
+    box-shadow:10px 10px grey;
+}
+section{
+  text-align:center;
+}
+.Standard {
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 30px;
+    width: 200px;
+    height: 300px;
+    align-content: center;
+    background-color: white;
+    box-shadow: 10px 10px grey;
+}
+.Premium {
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 30px;
+    width: 200px;
+    height: 300px;
+    align-content: center;
+    background-color: white;
+    box-shadow: 10px 10px grey;
+}
+.Plan {
+    font-size: 20px;
+}
+.Basic:hover {
+    transform: scale(1.2);
+    background-color: #90EE90;
+}
+.Standard:hover {
+    transform: scale(1.2);
+    background-color: #90EE90;
+}
+.Premium:hover {
+    transform: scale(1.2);
+    background-color: #90EE90;
+}

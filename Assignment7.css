@@ -1,0 +1,20 @@
+﻿.navbar
+{
+    display:flex;
+    justify-content:space-around;
+    list-style-type:none;
+    background-color:darkslateblue;
+    }
+.navbar li{
+    padding:15px;
+    color:white;
+}
+.navbar li:hover{
+    color:darkred;
+}
+@media(max-width:600px){
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+}
