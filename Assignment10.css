@@ -1,0 +1,39 @@
+﻿header
+{
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+}
+.container {
+    margin:100px;
+    padding:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+body{
+    margin:30px;
+    background-image:linear-gradient(lightblue,pink);
+}
+.contained {
+    width: 250px;
+    border: 1px solid grey;
+    padding: 50px;
+    margin: 20px;
+    background-color: white;
+    border-radius:18px;
+}
+section{
+    text-align:center;
+}
+button{
+    color:darkslateblue;
+}
+button:hover{
+    color:darkblue;
+}
+@media screen and (max-width: 300px) {
+    .container {
+        display: block;
+        float: none;
+    }
