@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum of Two Numbers</title>
+    </head>
+    <body style="padding: 20px;">
+        <h1 style="text-align: center;">Sum of Two Numbers</h1>
+        <p style="font-size: large;">Enter numbers:</p>
+        <label>First Number</label>
+        <input id="num1" type = "text" name = "num1">
+        <label>Second Number</label>
+        <input id="num2" type = "text" name = "num2"></br></br>
+        <button type="button" onclick = "Add()">Add</button>
+        <p id = "Result">Show Result</p>
+        <script>
+            function Add(){
+                let num1=parseFloat(document.getElementById("num1").value);
+                let num2=parseFloat(document.getElementById("num2").value);
+                let num3=num1+num2;
+                document.getElementById("Result").innerHTML="Sum is "+num3;
+            }
+        </script>
+    </body>
+</html>
