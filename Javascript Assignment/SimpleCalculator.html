@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+    </head>
+    <body style = "padding: 20px;">
+        <h1 style="text-align: center;">Calculator</h1>
+        <label>Enter first number:</label><br>
+        <input id="num1" type="number"><br><br>
+        <label>Enter second number:</label><br>
+        <input id="num2" type="number"><br><br>
+        <label>Select operation</label><br>
+        <select id="operator" name="operator">
+            <option value="+">Add</option>
+            <option value="-">Subtract</option>
+            <option value="*">Multiply</option>
+            <option value="/">Divide</option>
+        </select>
+        <button id="operate" onclick="Calculation()">Go</button>
+        <p id="Answer"></p>
+        <script>
+            function Calculation()
+            { 
+               let operation = document.getElementById("operator");
+               let num1=parseFloat(document.getElementById("num1").value);
+               let num2=parseFloat(document.getElementById("num2").value);
+               let sum=0;
+               if(operation.value=="+"){
+                 sum =num1+num2;
+                document.getElementById("Answer").textContent="Sum is: "+sum;
+               }
+               else if(operation.value=="-"){
+                let difference=num1-num2;
+                document.getElementById("Answer").textContent="Difference is: "+difference;
+               }
+               else if(operation.value=="*"){
+                let product=num1*num2;
+                document.getElementById("Answer").textContent="Product is: "+product;
+               }
+               else if(operation.value=="/"){
+                if(num2!=0){
+                let quotient=num1-num2;
+                document.getElementById("Answer").textContent="Quotient is: "+quotient;
+                }
+                else{
+                    document.getElementById("Answer").textContent="Enter valid number"
+                }
+               }
+            }
+        </script>
+    </body>
+</html>

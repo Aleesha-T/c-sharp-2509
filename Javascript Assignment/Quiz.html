@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+    </head>
+    <body style="padding: 20px;">
+        <h1 style="text-align: center;">Science Quiz</h1>
+        <form id="quiz form">
+        <label>1. Choose greenhouse gas from the following:</label><br><br>
+        <input id="greenhouse"type="radio" value="correct"/>Carbondioxide<br>
+        <input id="greenhouse"type="radio" value="wrong"/>Nitrogen<br>
+        <input id="greenhouse"type="radio" value="wrong"/>Oxygen<br><br>
+
+        <label>2. What is the scientific name of ozone layer?</label><br><br>
+        <input id="ozone"type="radio" value="wrong"/>Stratosphere<br>
+        <input id="ozone"type="radio" value="correct"/>Ozonosphere<br>
+        <input id="ozone"type="radio" value="wrong"/>Atmosphere<br><br>
+
+        <label>3. What is the temperature and pressure at which three phases of a substance co-exist in equilibrium called?</label><br><br>
+        <input id="triple-point"type="radio" value="wrong"/>Boiling point<br>
+        <input id="triple-point"type="radio" value="wrong"/>Melting point<br>
+        <input id="triple-point"type="radio" value="correct"/>Triple point<br><br>
+
+        <section style="text-align: center;"><button type="submit">Finish</button></section><br>
+    </form>
+        <p id="score" style="text-align: center;"></p>
+
+        <script>
+            const form=document.getElementById("quiz form");
+            const result=document.getElementById("score");
+            form.addEventListener("submit",function(event)
+            {
+            event.preventDefault();
+            let score=0;
+            const totalQuestions=3;
+
+            const answers=document.querySelectorAll('input[type="radio"]:checked');
+            answers.forEach((answer)=>{
+                if (answer.value === "correct")
+            {
+                score++;
+            }
+            });
+            result.textContent=`You scored ${score} out of ${totalQuestions}. `;
+
+            if(score==totalQuestions){
+                result.style.color="green";
+                result.textContent+="Great Job!";
+            }
+            else{
+                result.style.color="red";
+                result.textContent+="Try Again.";
+            }
+            });
+        </script>
+     </body>
+</html>

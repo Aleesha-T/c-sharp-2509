@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Color Changer</title>
+    </head>
+    <body style="padding: 20px;">
+        <h1 style="text-align: center;">Dynamic Color Changer</h1>
+        <label>Enter a color:</label><br><br>
+        <input id="colorinput" type="color" name="color"><br><br>
+        <button onclick = "ChangeColor()">Change</button>
+        <script>
+            function ChangeColor(){
+            let bg_color = document.getElementById("colorinput");
+            document.body.style.backgroundColor=bg_color.value;
+            }
+        </script>
+    </body>
+</html>
