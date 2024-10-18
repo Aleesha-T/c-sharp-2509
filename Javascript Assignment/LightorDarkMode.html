@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Light or Dark Mode Toggle</title>
+        <style>
+            body.light-mode {
+            background-color:white;
+            color:black;
+                        }
+           
+            body.dark-mode {
+            background-color:black;
+            color:white;
+           }
+        </style>
+    </head>
+    <body style="padding: 20px;">
+        <h1 style="text-align: center;">Light or Dark Mode Toggle</h1><br><br>
+        <section style="text-align: center;"><button id="toggle" onclick="Toggle()">Toggle</button></section>
+
+        <script>
+            const toggleModeBtn = document.getElementById('toggle');
+            let currentTheme = 'light-mode';
+            toggleModeBtn.addEventListener('click', () => {
+            document.body.classList.toggle(currentTheme);  
+            currentTheme = currentTheme === 'light-mode' ? 'dark-mode' : 'light-mode';
+            });
+        </script>
+    </body>
+</html>

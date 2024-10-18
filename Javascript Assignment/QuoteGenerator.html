@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Quote Generator</title>
+    </head>
+    <body style="padding: 20px;">
+        <h1 style="text-align: center;">Random Quote Generator</h1>
+        <p id="Quote" style="text-align: center;"></p><br>
+        <section style="text-align: center;"><button id="Generate" onclick="GenerateQuote()">Generate</button></section>
+
+    <script>
+        const quotes=["There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.",
+        "If you can't explain it to a six year old, you don't understand it yourself.", "Logic will get you from A to Z; imagination will get you everywhere.",
+        "Life is like riding a bicycle. To keep your balance, you must keep moving.", "Anyone who has never made a mistake has never tried anything new.",
+        "A clever person solves a problem. A wise person avoids it."];
+
+        const quoteDisplay = document.getElementById("Quote");
+        function GenerateQuote(){
+            const randomIndex=Math.floor(Math.random()*quotes.length);
+            quoteDisplay.textContent=quotes[randomIndex];
+        }  
+    </script>
+    </body>
+</html>

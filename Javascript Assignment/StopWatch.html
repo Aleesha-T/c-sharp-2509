@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stop Watch</title>
+    </head>
+    <body style = "padding: 20px;">
+        <h1 style = "text-align: center;">Stop Watch</h1>
+        <section style="text-align: center;"><div id="stopwatch">00:00:00</div></section><br>
+        <section style="text-align: center;"><button id="start" onclick="Start()">Start</button>
+        <button id="stop" onclick="Stop()">Stop</button>
+        <button id="reset" onclick="Reset()">Reset</button></section>
+
+        <script>
+        
+      var startTime; 
+      var stopwatchInterval; 
+      var elapsedPausedTime = 0; 
+      
+      function Start() {
+        if (!stopwatchInterval) {
+          startTime = new Date().getTime() - elapsedPausedTime; 
+          stopwatchInterval = setInterval(updateStopwatch, 1000); // update every second
+        }
+      }
+      
+      function Stop() {
+        clearInterval(stopwatchInterval);
+        elapsedPausedTime = new Date().getTime() - startTime; // calculate elapsed paused time
+        stopwatchInterval = null; // reset the interval variable
+      }
+      
+      function Reset() {
+        Stop();
+        elapsedPausedTime = 0; 
+        document.getElementById("stopwatch").innerHTML = "00:00:00"; 
+      }
+      
+      function updateStopwatch() {
+        var currentTime = new Date().getTime(); 
+        var elapsedTime = currentTime - startTime; 
+        var seconds = Math.floor(elapsedTime / 1000) % 60; 
+        var minutes = Math.floor(elapsedTime / 1000 / 60) % 60;
+        var hours = Math.floor(elapsedTime / 1000 / 60 / 60); 
+        var displayTime = pad(hours) + ":" + pad(minutes) + ":" + pad(seconds); 
+        document.getElementById("stopwatch").innerHTML = displayTime; 
+      }
+      
+      function pad(number) {
+               return (number < 10 ? "0" : "") + number;
+      }
+        </script>
+    </body>
+</html>

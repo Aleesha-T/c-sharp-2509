@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Carousel</title>
+        <style>
+            img{
+                width: 800px;
+                height: 500px;
+                }
+            #img{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+        </style>
+    </head>
+    <body style="padding: 20px;">
+        <h1 style="text-align: center;">Image Carousel</h1>
+        <div id="img"><img id="Image" src="Image1.png"></div><br>
+        <section style="text-align: center;"><button id="Previous" onclick="Previous()">Previous</button>
+        <button id="Next" onclick="Next()">Next</button></section>
+
+        <script>
+            var images=["Image1.png","Image2.png","Image3.png","Image4.png","Image5.png","Image6.png","Image7.png","Image8.png","Image9.png"];
+            var currentIndex=0;
+            function Next(){
+                currentIndex++;
+                if(currentIndex>=images.length){
+                    currentIndex=0;
+                   }
+                   document.getElementById("Image").src=images[currentIndex];
+          }
+          function Previous(){
+                currentIndex--;
+                if(currentIndex<0){
+                    currentIndex=images.length-1;
+                   }
+                   document.getElementById("Image").src=images[currentIndex];
+          }
+        </script>
+    </body>
+</html>
