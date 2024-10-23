@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A29F28D1-A05C-4FFD-AC7A-C7E4BCCF9C1E}</ProjectGuid>
+    <ProjectGuid>{438256CD-DA64-4ECC-A834-143F6B742225}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CsharpAssignments</RootNamespace>
-    <AssemblyName>CsharpAssignments</AssemblyName>
+    <RootNamespace>OOPS</RootNamespace>
+    <AssemblyName>OOPS</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,25 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bank.cs" />
-    <Compile Include="BankAccount.cs" />
-    <Compile Include="Car.cs" />
-    <Compile Include="CarDetails.cs" />
-    <Compile Include="Configuration.cs" />
-    <Compile Include="Details.cs" />
-    <Compile Include="Inventory.cs" />
-    <Compile Include="MathOperations.cs" />
-    <Compile Include="NewProduct.cs" />
-    <Compile Include="Print.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="ProductNew.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeNew.cs" />
+    <Compile Include="MultipleIheritance.cs" />
+    <Compile Include="Polymorphism.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="ShoppingCart.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="StudentDetails.cs" />
-    <Compile Include="Time.cs" />
+    <Compile Include="Reverse.cs" />
+    <Compile Include="Tour.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

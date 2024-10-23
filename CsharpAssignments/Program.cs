@@ -24,6 +24,8 @@ namespace CsharpAssignments
             //}
             //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------//
+
             ////Assignment 2: Employee Class
             //try
             //{
@@ -43,6 +45,8 @@ namespace CsharpAssignments
             //}
             //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------//
+
             ////Assignment 3: Library Management System
             //Book book1 = new Book("The Da Vinci Code", "Dan Brown", "984-456-874");
             //Book book2 = new Book("Harry Potter", "J. K. Rowling", "875-545-634");
@@ -58,6 +62,8 @@ namespace CsharpAssignments
             //Console.WriteLine("Books in library after removing:");
             //library.DisplayBooks();
             //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------//
 
             ////Assignment 4: Banking System
             //try
@@ -76,7 +82,8 @@ namespace CsharpAssignments
             //    Console.WriteLine(ex.Message);
             //}
             //Console.ReadLine();
-            //}
+
+            //-------------------------------------------------------------------------------------//
 
             ////Assignment 5: Student Management System
             //try
@@ -103,6 +110,8 @@ namespace CsharpAssignments
             //}
             //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------//
+
             ////Assignment 6: Inventory System
             //try
             //{
@@ -128,6 +137,8 @@ namespace CsharpAssignments
             //}
             //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------//
+
             //Assignment 7: E-commerce System
             //try
             //{
@@ -151,6 +162,8 @@ namespace CsharpAssignments
             //}
             //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------//
+
             ////Assignment 8: Print Class
             //Print print = new Print();
             //Console.WriteLine($"Data as string: {print.PrintData("Aleesha")}");
@@ -160,17 +173,23 @@ namespace CsharpAssignments
             //print.PrintData(data);
             //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------//
+
             ////Assignment 9: Rectangle Class 
             //Rectangle rectangle = new Rectangle();
             //rectangle.RectangleArea(4, 3);
             //rectangle.RectangleArea(5);
             //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------//
+
             ////Assignment 10: Time Class
             //Time time = new Time();
             //time.SetTime(5, 62);
             //time.SetTime(4800);
             //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------//
 
             //Static and Instance Blocks
 
@@ -179,20 +198,143 @@ namespace CsharpAssignments
             //bank.DisplayAccountInfo();
             //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------//
+
             ////Assignment 12: Counting Objects with Static and Instance Fields
-            //Car car1= new Car();
-            //Car car2= new Car();
+            //Car car1 = new Car();
+            //Car car2 = new Car();
             //car2.Count();
             //Console.ReadLine();
 
-            //
+            //-------------------------------------------------------------------------------------//
 
+            ////Assignment 13: Initializing Constants with Static Block
+            //MathOperations mathOperations = new MathOperations();
+            //mathOperations.Display();
+            //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------//
 
+            ////Assignment 14: Initializing Configuration with Static Constructor
+            //try
+            //{
+            //    Configuration configuration1 = new Configuration("ON", "Dark", "Times New Roman");
+            //    Console.WriteLine("Settings of user 1");
+            //    configuration1.Display_Settings();
+            //    Console.WriteLine();
+            //    Configuration configuration2 = new Configuration("OFF", "Light", "Calibri");
+            //    Console.WriteLine("Settings of user 2");
+            //    configuration2.Display_Settings();
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------//
 
+            ////Assignment15: Implementing and Understanding Copy Constructor 
+            //Details initial = new Details();
+            //Console.WriteLine("Details during initialization");
+            //initial.DisplayDetails();
+            //Console.WriteLine();
 
+            //Details input = new Details("Aleesha", 21, "Haripad");
+            //Console.WriteLine("Details after inputting");
+            //input.DisplayDetails();
+            //Console.WriteLine();
 
+            //Details copy = new Details(input);
+            //Console.WriteLine("Details in Copy Constructor");
+            //copy.DisplayDetails();
+            //Console.WriteLine();
+
+            //Details reference = input;
+            //Console.WriteLine("Details in Reference");
+            //reference.DisplayDetails();
+            //Console.WriteLine();
+
+            //reference.Name = "Riya";
+            //reference.Age = 22;
+            //reference.Place = "Nangiarkulangara";
+
+            //Console.WriteLine("---------------------------------------------------------");
+            //Console.WriteLine("Details in original after changing in reference");
+            //input.DisplayDetails();
+            //Console.WriteLine();
+            //Console.WriteLine("Details in copy after changing in reference");
+            //copy.DisplayDetails();
+            //Console.WriteLine();
+            //Console.WriteLine("Details in reference after changing in reference");
+            //reference.DisplayDetails();
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------//
+
+            ////Assignment 16: Identifying the Need for Chained Constructors
+            //CarDetails car1 = new CarDetails("Ford");
+            //car1.DisplayCarDetails();
+            //Console.WriteLine();
+            //CarDetails car2 = new CarDetails("Honda", "Pilot EX-L");
+            //car2.DisplayCarDetails();
+            //Console.WriteLine();
+            //CarDetails car3 = new CarDetails("Chevrolet", "Equinox LS", 2024);
+            //car3.DisplayCarDetails();
+            //Console.WriteLine();
+            //CarDetails car4 = new CarDetails("Mercedes-Benz", "GLA 250", 2024, 43000);
+            //car4.DisplayCarDetails();
+            //Console.WriteLine();
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------//
+
+            ////Assignment 17: Understanding the Need for Constructor Overloading 
+            //ProductNew product1 = new ProductNew("Pencil");
+            //product1.CalculateFinalPrice();
+            //product1.Display();
+            //Console.WriteLine();
+            //ProductNew product2 = new ProductNew("Mouse", 3.5f);
+            //product2.CalculateFinalPrice();
+            //product2.Display();
+            //Console.WriteLine();
+            //ProductNew product3 = new ProductNew("Laptop", 737.18f, 40);
+            //product3.CalculateFinalPrice();
+            //product3.Display();
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------//
+
+            ////Assignment 18: Exploring Different Ways to Initialize Objects 
+            //NewProduct product1= new NewProduct();
+            //Console.WriteLine("Initial values");
+            //product1.Display();
+            //Console.WriteLine();
+
+            //NewProduct product2= new NewProduct("Pencil", 10, "Stationary");
+            //Console.WriteLine("Values initialized");
+            //product2.Display();
+            //Console.WriteLine();
+
+            //NewProduct product3 = NewProduct.CreateProduct("Pen", 5, "Stationary");
+            //Console.WriteLine("Using static method");
+            //product3.Display();
+            //Console.WriteLine();
+
+            //Type producttype = typeof(NewProduct);
+            //NewProduct product4=(NewProduct)Activator.CreateInstance(producttype, new object[] {"Snacks", 80, "Eatables"});
+            //Console.WriteLine("Reflection method");
+            //product4.Display();
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------//
+
+            //Assignment 19: Exploring Initialization Using Tuples and Records
+
+            //Assignment 20: Shopping Cart
+            ShoppingCart cart = new ShoppingCart();
+            ShoppingCart.CartProduct product = new ShoppingCart.CartProduct("Laptop", 60000, 40);
+            //cart.AddProduct(product);
 
 
 
