@@ -75,6 +75,25 @@ namespace AssignmentOnInheritance
 
             //-----------------------------------------------------------------------//
 
+            ////Lab 8. Sealed Classes
+            //MathOperations mathOperations = new MathOperations();            
+            //Console.WriteLine($"Sum is: {mathOperations.Add(1, 2)}");
+            //Console.ReadLine();
+
+            //-----------------------------------------------------------------------//
+
+            ////Lab 9. Constructor Chaining
+            //PersonNew person = new PersonNew("Aleesha", 21);
+            //EmployeeNew employee = new EmployeeNew("IT");
+            //employee.ShowDetails();
+            //Console.ReadLine();
+
+            //-----------------------------------------------------------------------//
+
+            //Lab 10. Interface Inheritance
+
+
+
         }
     }
 }

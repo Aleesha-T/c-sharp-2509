@@ -46,7 +46,9 @@
     <Compile Include="AbstractVehicle.cs" />
     <Compile Include="Animal.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="MathOperations.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="PersonNew.cs" />
     <Compile Include="PrinterScanner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
