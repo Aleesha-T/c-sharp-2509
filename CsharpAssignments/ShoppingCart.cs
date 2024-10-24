@@ -8,18 +8,22 @@ namespace CsharpAssignments
 {
     public class ShoppingCart
     {
-       public static float total_price=0;
-       private List<Product> products = new List<Product>();
+        public float total_price;
+        private List<CartProduct> products = new List<CartProduct>();
 
-       //public void AddProduct(ShoppingCart.CartProduct product)
-       //{
-       //     products.Add(product);
-       //}
-       public static void TotalPrice(CartProduct product)
-       {
-            total_price += product.Price;
-            Console.WriteLine("Total Price: Rs."+total_price);
-       }
+        public void AddProduct(ShoppingCart.CartProduct product)
+        {
+            products.Add(product);
+        }
+
+        public void TotalPrice()
+        {
+            foreach (var product in products)
+            {
+                total_price += product.Price;
+            }
+            Console.WriteLine($"Total Price: Rs.{total_price}");
+        }
 
        public void Display()
        {

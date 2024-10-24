@@ -34,9 +34,9 @@ namespace CsharpAssignments
 
         public void CalculateFinalPrice()
         {
-            if(discount!=0)
+            if (discount != 0)
             {
-                finalprice = price * discount / 100;                
+                finalprice = price- (price * discount / 100);
             }
             else
             {

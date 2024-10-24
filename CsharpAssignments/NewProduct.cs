@@ -36,5 +36,6 @@ namespace CsharpAssignments
         {
             Console.WriteLine($"Name: {Name}, Price: Rs.{Price}, Category: {Category}");
         }
+        //display values
     }
 }

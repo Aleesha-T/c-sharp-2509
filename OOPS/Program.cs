@@ -75,18 +75,25 @@ namespace OOPS
             //Operator overloading
             //-----------------------------------------------------------------------------------------------//
 
-            EmployeeNew employee1 = new EmployeeNew("Aleesha", "IT");
-            EmployeeNew employee2 = new EmployeeNew("Alwin", "IT");
-            EmployeeDetails employeeDetails = new EmployeeDetails();
-            employeeDetails.AddEmployee(employee1);
-            employeeDetails.AddEmployee(employee2);
-            employeeDetails.ShowDetails();
-            Console.ReadLine();
+            //EmployeeNew employee1 = new EmployeeNew("Aleesha", "IT");
+            //EmployeeNew employee2 = new EmployeeNew("Alwin", "IT");
+            //EmployeeDetails employeeDetails = new EmployeeDetails();
+            //employeeDetails.AddEmployee(employee1);
+            //employeeDetails.AddEmployee(employee2);
+            //employeeDetails.ShowDetails();
+            //Console.ReadLine();
 
             //List
             //-----------------------------------------------------------------------------------------------//
 
+            //Class1 class1 = new Class1();
 
+            //-----------------------------------------------------------------------------------------------//
+
+            PersonalDetails details = new PersonalDetails("Aleesha", 21);
+            details.Display();
+            details.DisplayAll();
+            Console.ReadLine();
 
 
 

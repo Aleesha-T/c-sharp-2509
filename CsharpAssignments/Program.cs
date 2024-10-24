@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -306,12 +307,12 @@ namespace CsharpAssignments
             //-------------------------------------------------------------------------------------//
 
             ////Assignment 18: Exploring Different Ways to Initialize Objects 
-            //NewProduct product1= new NewProduct();
+            //NewProduct product1 = new NewProduct();
             //Console.WriteLine("Initial values");
             //product1.Display();
             //Console.WriteLine();
 
-            //NewProduct product2= new NewProduct("Pencil", 10, "Stationary");
+            //NewProduct product2 = new NewProduct("Pencil", 10, "Stationary");
             //Console.WriteLine("Values initialized");
             //product2.Display();
             //Console.WriteLine();
@@ -322,22 +323,93 @@ namespace CsharpAssignments
             //Console.WriteLine();
 
             //Type producttype = typeof(NewProduct);
-            //NewProduct product4=(NewProduct)Activator.CreateInstance(producttype, new object[] {"Snacks", 80, "Eatables"});
+            //NewProduct product4 = (NewProduct)Activator.CreateInstance(producttype, new object[] { "Snacks", 80, "Eatables" });
             //Console.WriteLine("Reflection method");
             //product4.Display();
+            //Console.WriteLine();
+
+            //NewProduct product5 = new NewProduct { Name = "Bulb", Price = 40, Category = "Electronics" };
+            //Console.WriteLine("Object initialization method");
+            //product5.Display();
+            //Console.WriteLine();
+
+            //var anonymousProduct = new { Name = "Necklace", Price = 100, Category = "Accessories" };
+            //Console.WriteLine("Anonymous method");
+            //Console.WriteLine($"Name: {anonymousProduct.Name}, Price: Rs. {anonymousProduct.Price}, Category: {anonymousProduct.Category}");
+
             //Console.ReadLine();
 
             //-------------------------------------------------------------------------------------//
 
-            //Assignment 19: Exploring Initialization Using Tuples and Records
-
-            //Assignment 20: Shopping Cart
-            ShoppingCart cart = new ShoppingCart();
-            ShoppingCart.CartProduct product = new ShoppingCart.CartProduct("Laptop", 60000, 40);
+            ////Assignment 20: Shopping Cart
+            //ShoppingCart cart = new ShoppingCart();
+            //ShoppingCart.CartProduct product = new ShoppingCart.CartProduct("Laptop", 60000, 40);
             //cart.AddProduct(product);
+            //ShoppingCart.CartProduct product2 = new ShoppingCart.CartProduct("Mobile", 20000, 80);
+            //cart.AddProduct(product2);
+            //ShoppingCart.CartProduct product3 = new ShoppingCart.CartProduct("Mouse", 200, 1000);
+            //cart.AddProduct(product3);
+            //cart.Display();
+            //cart.TotalPrice();
+            //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------//
 
+            ////Assignment 21: Banking System
+            //try
+            //{
+            //    BankNew bank = new BankNew();
+            //    BankNew.Customer customer1 = new BankNew.Customer("Aleesha");
+            //    bank.AddCustomer(customer1);
+            //    BankNew.Customer.Account account1 = new BankNew.Customer.Account(4568254665655, 10000);
+            //    bank.AddAccount(customer1, account1);
+            //    BankNew.Customer.Account account2 = new BankNew.Customer.Account(8541236632212, 500000);
+            //    bank.AddAccount(customer1, account2);
 
+            //    BankNew.Customer customer2 = new BankNew.Customer("Alwin");
+            //    bank.AddCustomer(customer2);
+            //    BankNew.Customer.Account account3 = new BankNew.Customer.Account(95422586332, 480000);
+            //    bank.AddAccount(customer2, account3);
+            //    BankNew.Customer.Account account4 = new BankNew.Customer.Account(3448522222, 100000000);
+            //    bank.AddAccount(customer2, account4);
+
+            //    bank.DisplayCustomerDetails(customer1);
+            //    Console.WriteLine();
+            //    bank.DisplayCustomerDetails(customer2);
+            //}
+            //catch (ArgumentException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------//
+
+            ////Assignment 22: University System 
+            //University university = new University();
+            //University.Department electrical = new University.Department("Electrical");
+            //university.AddDepartment(electrical);
+            //University.Department.Course dcmt = new University.Department.Course("DCMT", "EET123", 4);
+            //university.AddCourse(electrical, dcmt);
+            //University.Department.Course emt = new University.Department.Course("EMT", "EET456", 3);
+            //university.AddCourse(electrical, emt);
+
+            //University.Department civil = new University.Department("Civil");
+            //university.AddDepartment(civil);
+            //University.Department.Course basiccivil = new University.Department.Course("Basic Civil", "EEC563", 4);
+            //university.AddCourse(civil, basiccivil);
+            //University.Department.Course survey = new University.Department.Course("Survey", "EEC576", 3);
+            //university.AddCourse(electrical, survey);
+
+            //university.DisplayCourseDetails(dcmt);
+            //university.DisplayCourseDetails(emt);
+            //university.DisplayCourseDetails(basiccivil);
+            //university.DisplayCourseDetails(survey);
+
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------//
 
 
 

@@ -43,14 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractandInterface.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeNew.cs" />
+    <Compile Include="Extension.cs" />
     <Compile Include="MultipleIheritance.cs" />
     <Compile Include="Polymorphism.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reverse.cs" />
     <Compile Include="Tour.cs" />
+    <Compile Include="Types.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
