@@ -18,5 +18,6 @@ namespace CsharpAssignments
             int area = length * length;
             Console.WriteLine("Area of square is: " + area);
         }
+        //method overloading
     }
 }

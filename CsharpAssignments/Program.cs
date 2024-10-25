@@ -169,7 +169,7 @@ namespace CsharpAssignments
             //Print print = new Print();
             //Console.WriteLine($"Data as string: {print.PrintData("Aleesha")}");
             //Console.WriteLine($"Data as integer: {print.PrintData(2003)}");
-            //int[] data = { 1, 2, 3, 4 };
+            //int[] data = { 1, 2, 3, 4 }; //initializing array
             //Console.WriteLine("Data in array:");
             //print.PrintData(data);
             //Console.ReadLine();
@@ -186,8 +186,8 @@ namespace CsharpAssignments
 
             ////Assignment 10: Time Class
             //Time time = new Time();
-            //time.SetTime(5, 62);
-            //time.SetTime(4800);
+            //time.SetTime(5, 62); //inputs hours and minutes
+            //time.SetTime(4800); //inputs seconds
             //Console.ReadLine();
 
             //-------------------------------------------------------------------------------------//
@@ -425,11 +425,11 @@ namespace CsharpAssignments
             get { return radius; }
             set
             {
-                if (value < 0)
+                if (value < 0) //check if radius input is negative
                 {
                     throw new ArgumentException("Radius cannot be negative");
                 }
-                radius = value;
+                radius = value; //else assign value
             }
         }
     }
@@ -449,7 +449,7 @@ namespace CsharpAssignments
             get { return salary; }
             set
             {
-                if (value < 0)
+                if (value < 0) //check if input is negative
                 {
                     throw new ArgumentException("Salary cannot be negative");
                 }
@@ -474,13 +474,13 @@ namespace CsharpAssignments
 
     public class Library
     {
-        private List<Book> books = new List<Book>();
+        private List<Book> books = new List<Book>(); //creating a new list of class Book
 
-        public void AddBook(Book book)
+        public void AddBook(Book book) //to add to lst
         {
             books.Add(book);
         }
-        public void RemoveBook(string isbn)
+        public void RemoveBook(string isbn) //to remove from list
         {
             books.RemoveAll(b => b.ISBN == isbn);
         }

@@ -8,12 +8,12 @@ namespace CsharpAssignments
 {
     public class University
     {
-        List<Department> departments=new List<Department>();
-        public void AddDepartment(Department department)
+        List<Department> departments=new List<Department>(); //new list
+        public void AddDepartment(Department department) //add to list
         {
             departments.Add(department);
         }
-        public void AddCourse(Department department, Department.Course course)
+        public void AddCourse(Department department, Department.Course course) //add to llist
         {
             department.courses.Add(course);
         }
@@ -31,7 +31,7 @@ namespace CsharpAssignments
                 DepartmentName = departmentName;
             }
 
-            public List<Course> courses = new List<Course>();
+            public List<Course> courses = new List<Course>(); //new list
             public class Course
             {
                 public string CourseName { get; set; }

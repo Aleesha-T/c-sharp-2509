@@ -17,7 +17,7 @@ namespace CsharpAssignments
             get { return stock; }
             set
             {
-                if (value < 0)
+                if (value < 0) //check if value is negative
                 {
                     throw new ArgumentException("Invalid value");
                 }
@@ -29,7 +29,7 @@ namespace CsharpAssignments
             get { return price; }
             set
             {
-                if (value < 0)
+                if (value < 0) //check if value is negative
                 {
                     throw new ArgumentException("Invalid price");
                 }
@@ -46,14 +46,14 @@ namespace CsharpAssignments
 
     public class Inventory
     {
-        private List<Item> items = new List<Item>();
+        private List<Item> items = new List<Item>(); //creating a list of class Item
 
-        public void AddItem(Item item)
+        public void AddItem(Item item) //add to list
         {
             items.Add(item);
         }
 
-        public void RemoveItem(string Name)
+        public void RemoveItem(string Name) //remove from list
         {
             items.RemoveAll(x => x.Name == Name);
         }

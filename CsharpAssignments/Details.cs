@@ -20,7 +20,7 @@ namespace CsharpAssignments
             Place = "Unknown";
         }
 
-        public Details(string name, int age, string place)
+        public Details(string name, int age, string place) //parameterized constructor
         {
             Name = name;
             Age = age;

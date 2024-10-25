@@ -18,7 +18,7 @@
 //            get { return balance; }
 //            set
 //            {
-//                if(value<0)
+//                if (value < 0) //check if value is negative
 //                {
 //                    throw new ArgumentException("Balance cannot be negative");
 //                }
@@ -46,10 +46,10 @@
 //        }
 //        public void Withdraw(float withdrawamount)
 //        {
-//            if(withdrawamount>0&&withdrawamount<=Balance)
+//            if (withdrawamount > 0 && withdrawamount <= Balance)
 //            {
-//                Balance=Balance-withdrawamount;
-//                Console.WriteLine("Withdrawed Rs. "+withdrawamount);
+//                Balance = Balance - withdrawamount;
+//                Console.WriteLine("Withdrawed Rs. " + withdrawamount);
 //            }
 //            else
 //            {

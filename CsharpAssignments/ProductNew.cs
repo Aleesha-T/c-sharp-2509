@@ -11,6 +11,7 @@ namespace CsharpAssignments
         public string name { get; set; }
         public float price { get; set; }
         public int discount { get; set; }
+
         public float finalprice;
 
         public ProductNew(string name)
@@ -31,7 +32,7 @@ namespace CsharpAssignments
             this.price = price;
             this.discount = discount;
         }
-
+        //constructor overloading
         public void CalculateFinalPrice()
         {
             if (discount != 0)

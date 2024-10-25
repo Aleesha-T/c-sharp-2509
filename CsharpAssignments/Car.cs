@@ -9,9 +9,9 @@ namespace CsharpAssignments
     public class Car
     {
         private static int counter;
-        static Car()
+        static Car() //static constructor
         {
-            counter = 0;
+            counter = 0; //initializing counter value
         }
         public Car() 
         {

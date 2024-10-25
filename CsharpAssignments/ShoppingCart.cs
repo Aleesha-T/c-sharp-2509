@@ -9,9 +9,9 @@ namespace CsharpAssignments
     public class ShoppingCart
     {
         public float total_price;
-        private List<CartProduct> products = new List<CartProduct>();
+        private List<CartProduct> products = new List<CartProduct>(); //new list
 
-        public void AddProduct(ShoppingCart.CartProduct product)
+        public void AddProduct(ShoppingCart.CartProduct product) //add to list
         {
             products.Add(product);
         }

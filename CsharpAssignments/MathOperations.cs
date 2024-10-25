@@ -9,7 +9,7 @@ namespace CsharpAssignments
     public class MathOperations
     {
         static double PI;
-        static MathOperations()
+        static MathOperations() //static constructor
         {
             PI = 3.14;
         }

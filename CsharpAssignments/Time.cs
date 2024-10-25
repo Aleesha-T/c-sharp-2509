@@ -29,6 +29,7 @@ namespace CsharpAssignments
             Console.WriteLine($"Time is: {Pad(Hours)}:{Pad(Minutes)}:{Pad(Seconds)}");
         }
 
+        //method overloading
         string Pad(int a)
         {
             string b;

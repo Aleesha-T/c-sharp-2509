@@ -13,7 +13,7 @@ namespace CsharpAssignments
         private string theme;
         private string font;
 
-        static Configuration()
+        static Configuration() //static constructor
         {
             Laptop_make = "Lenovo";
         }

@@ -10,7 +10,7 @@
 //    {
 //        public static float interestrate;
 //        public float balance;
-//        static Bank()
+//        static Bank() //static constructor
 //        {
 //            interestrate = 1.2f;
 //        }

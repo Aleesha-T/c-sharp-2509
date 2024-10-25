@@ -11,7 +11,7 @@ namespace CsharpAssignments
     {
         public string Name;
         public string ID;       
-        public List<int>marks = new List<int>();
+        public List<int>marks = new List<int>(); //new list
 
         public StudentDetails(string name, string id)
         {
@@ -19,7 +19,7 @@ namespace CsharpAssignments
             ID = id;
         }
         
-        public void AddMarks(int a)
+        public void AddMarks(int a) //add to list
         {
             if (a > 0 && a <= 100)
             {

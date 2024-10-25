@@ -53,7 +53,7 @@ namespace CsharpAssignments
                     get { return balance; }
                     set
                     {
-                        if (value < 0)
+                        if (value < 0) //check if value is negative
                         {
                             throw new ArgumentException("Balance cannot be negative");
                         }
