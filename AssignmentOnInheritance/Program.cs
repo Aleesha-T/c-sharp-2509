@@ -90,10 +90,55 @@ namespace AssignmentOnInheritance
 
             //-----------------------------------------------------------------------//
 
-            //Lab 10. Interface Inheritance
+            ////Lab 10. Interface Inheritance
+            //InheritClass inheritClass = new InheritClass();
+            //Console.WriteLine("This is from IDriveable");
+            //inheritClass.Drive();
+            //Console.WriteLine("\nThis is from IRaceable");
+            //inheritClass.Race();
+            //Console.ReadLine();
 
+            //-----------------------------------------------------------------------//
 
+            ////Lab 11. IS-A Relationship (Inheritance)
+            //DogNew dog = new DogNew();
+            //Console.WriteLine("From DogNew class");
+            //dog.Bark("Zoe");
+            //Console.WriteLine("\nFrom AnimalNew class");
+            //dog.Eat("Caesar");
+            //Console.ReadLine();
 
+            //-----------------------------------------------------------------------//
+
+            ////Lab 12.HAS-A Relationship (Composition)
+            //Engine engine = new Engine();
+            //CarNew car = new CarNew("Honda", 24, 1600, 6, engine);
+            //car.Display();
+            //engine.Display();
+            //Console.ReadLine();
+
+            //-----------------------------------------------------------------------//
+
+            ////Lab 13. Calling Base Class Method Using base
+            //NewEmployee employee = new NewEmployee("Riya", 22); //inside NewPerson
+            //employee.DisplayInfo();
+            //Console.ReadLine();
+
+            //-----------------------------------------------------------------------//
+
+            ////Lab 14. Accessing Base Class Variable Using base 
+            //StudentNew student = new StudentNew("Anakha"); //inside PersonClass
+            //student.DisplayName();
+            //Console.ReadLine();
+
+            //-----------------------------------------------------------------------//
+
+            ////Lab 15. Calling Base Class Constructor Using base
+            //NewCar car = new NewCar("Toyota");
+            //car.DisplayBrand();
+            //Console.ReadLine();
+
+            //-----------------------------------------------------------------------//
         }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C4A1D982-8B88-40B7-BC42-F1DF4CF576F4}</ProjectGuid>
+    <ProjectGuid>{772A5C12-9E51-416F-92C1-00E410376AF9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AssignmentOnInheritance</RootNamespace>
-    <AssemblyName>AssignmentOnInheritance</AssemblyName>
+    <RootNamespace>AssignmentOnPolymorphism</RootNamespace>
+    <AssemblyName>AssignmentOnPolymorphism</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,23 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractVehicle.cs" />
-    <Compile Include="Animal.cs" />
-    <Compile Include="AnimalNew.cs" />
     <Compile Include="Employee.cs" />
-    <Compile Include="Engine.cs" />
-    <Compile Include="InterfaceInheritance.cs" />
-    <Compile Include="MathOperations.cs" />
-    <Compile Include="NewPerson.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="PersonClass.cs" />
-    <Compile Include="PersonNew.cs" />
-    <Compile Include="PrinterScanner.cs" />
+    <Compile Include="MethodOverloading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shape.cs" />
     <Compile Include="Vehicle.cs" />
-    <Compile Include="VehicleNew.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
