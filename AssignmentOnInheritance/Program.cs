@@ -10,13 +10,13 @@ namespace AssignmentOnInheritance
     {
         static void Main(string[] args)
         {
-            ////Lab 1. Single Inheritance
-            //Student student1 = new Student("Aleesha", 21, 'S');
-            //student1.Display();
-            //Console.WriteLine();
-            //Student student2 = new Student("Arya", 22, 'S');
-            //student2.Display();
-            //Console.ReadLine();
+            //    //Lab 1. Single Inheritance
+            //    Student student1 = new Student("Aleesha", 21, 'S');
+            //    student1.Display();
+            //    Console.WriteLine();
+            //    Student student2 = new Student("Arya", 22, 'S');
+            //    student2.Display();
+            //    Console.ReadLine();
 
             //-----------------------------------------------------------------------//
 
@@ -76,7 +76,7 @@ namespace AssignmentOnInheritance
             //-----------------------------------------------------------------------//
 
             ////Lab 8. Sealed Classes
-            //MathOperations mathOperations = new MathOperations();            
+            //MathOperations mathOperations = new MathOperations();
             //Console.WriteLine($"Sum is: {mathOperations.Add(1, 2)}");
             //Console.ReadLine();
 

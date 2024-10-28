@@ -13,7 +13,7 @@ namespace AssignmentOnInheritance
             return a + b;
         }
     }
-    //public class Inherit:MathOperations
+    //public class Inherit : MathOperations
     //{
 
     //}
