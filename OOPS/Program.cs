@@ -86,14 +86,61 @@ namespace OOPS
             //List
             //-----------------------------------------------------------------------------------------------//
 
-            //Class1 class1 = new Class1();
+            //PersonalDetails details = new PersonalDetails("Aleesha", 21);
+            //details.Display();
+            //details.DisplayAll();
+            //Console.ReadLine();
 
             //-----------------------------------------------------------------------------------------------//
 
-            PersonalDetails details = new PersonalDetails("Aleesha", 21);
-            details.Display();
-            details.DisplayAll();
-            Console.ReadLine();
+            //string myString = "Aleesha";
+            //Console.WriteLine("Value before calling function: "+myString);
+            //RefKeyword.ChangeStringValue(ref myString);
+            //Console.WriteLine("Value after calling function: " + myString);
+            //Console.ReadLine();
+
+            //Use of ref keyword
+            //-----------------------------------------------------------------------------------------------//
+
+            //Details details = new Details();
+            //details.Name = "Aleesha";
+            //details.Age = 21;
+            //Console.WriteLine($"Before calling function, Name: {details.Name}, Age: {details.Age}");
+            //details.ChangeValue(details);
+            //Console.WriteLine($"After calling function, Name: {details.Name}, Age: {details.Age}");
+            //Console.ReadLine();
+
+            //when to use ref keyword
+            //-----------------------------------------------------------------------------------------------//
+
+            //Indexer indexer = new Indexer();
+            //indexer[0] = 2;
+            //indexer[1] = 4;
+            //indexer[2] = 6;
+            //indexer[3] = 8;
+            //indexer[4] = 10;
+
+            //Console.WriteLine($"{indexer[0]}, {indexer[1]}");
+            //Console.ReadLine();
+
+            //Indexer
+            //-----------------------------------------------------------------------------------------------//
+
+            //string detail=string.Empty;
+            //Out.Display(out string info);
+            //Out.Display(detail);
+            //Console.WriteLine($"Value outside function (with out): {info}");
+            //Console.WriteLine($"Value outside function (without out): {detail}");
+            //Console.ReadLine();
+
+            //out keyword
+            //-----------------------------------------------------------------------------------------------//
+
+            //ObsoleteClass.Method();
+            //Console.ReadLine();
+
+            //obsolete 
+            //-----------------------------------------------------------------------------------------------//
 
 
 

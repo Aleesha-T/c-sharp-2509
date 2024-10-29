@@ -8,15 +8,15 @@ namespace AssignmentOnPolymorphism
 {
     public class Employee
     {
-        public static int NoOfEmployees;
-        public int Number;
+        public static int NoOfEmployees; //static integer
+        public int Number; //instance variable
         public string Name;
         public Employee()
         {
             NoOfEmployees++;
             Number++;
         }
-        public static void DisplayNumber()
+        public static void DisplayNumber() //static method
         {
             Console.WriteLine("\nNo. of employees(using static field): " + NoOfEmployees);
         }

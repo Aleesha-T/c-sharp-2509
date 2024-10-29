@@ -15,7 +15,7 @@ namespace AssignmentOnPolymorphism
     }
     public class  Car:Vehicle
     {
-        public override void Drive()
+        public override void Drive() //overriding function Drive
         {
             Console.WriteLine("Car is driven");
         }

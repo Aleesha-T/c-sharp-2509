@@ -15,14 +15,14 @@ namespace AssignmentOnPolymorphism
     }
     public class CreditCardPayment:Payment
     {
-        public override void ProcessPayment()
+        public override void ProcessPayment() //overriding method
         {
             Console.WriteLine("Credit card payment method");
         }
     }
     public class PayPalPayment:Payment
     {
-        public override void ProcessPayment()
+        public override void ProcessPayment() //overriding method
         {
             Console.WriteLine("\nPay pal payment method");
         }
