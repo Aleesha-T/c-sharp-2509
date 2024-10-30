@@ -46,7 +46,7 @@ namespace OOPS
             //Console.WriteLine();
             //Console.ReadLine();
 
-            //Single inheritance
+            //Single inheritance.
             //-----------------------------------------------------------------------------------------------//
 
             //Stay stay = new Stay();
@@ -55,7 +55,7 @@ namespace OOPS
             //Console.WriteLine("Resort will be: " + stay.Resort());
             //Console.ReadLine();
 
-            //Multi-level inheritance
+            //Multi-level inheritance.
             //-----------------------------------------------------------------------------------------------//
 
             //Polymorphism poly = new Polymorphism();
@@ -64,7 +64,7 @@ namespace OOPS
             //Console.WriteLine(poly.Display("Alwin", "K", "Thomas"));
             //Console.ReadLine();
 
-            //Method overloading
+            //Method overloading.
             //-----------------------------------------------------------------------------------------------//
 
             //Reverse reverse1 = new Reverse(10, 20);
@@ -72,7 +72,7 @@ namespace OOPS
             //reverse1.Display();
             //Console.ReadLine();
 
-            //Operator overloading
+            //Operator overloading.
             //-----------------------------------------------------------------------------------------------//
 
             //EmployeeNew employee1 = new EmployeeNew("Aleesha", "IT");
@@ -83,7 +83,7 @@ namespace OOPS
             //employeeDetails.ShowDetails();
             //Console.ReadLine();
 
-            //List
+            //List.
             //-----------------------------------------------------------------------------------------------//
 
             //PersonalDetails details = new PersonalDetails("Aleesha", 21);
@@ -99,7 +99,7 @@ namespace OOPS
             //Console.WriteLine("Value after calling function: " + myString);
             //Console.ReadLine();
 
-            //Use of ref keyword
+            //Use of ref keyword.
             //-----------------------------------------------------------------------------------------------//
 
             //Details details = new Details();
@@ -110,7 +110,7 @@ namespace OOPS
             //Console.WriteLine($"After calling function, Name: {details.Name}, Age: {details.Age}");
             //Console.ReadLine();
 
-            //when to use ref keyword
+            //When to use ref keyword.
             //-----------------------------------------------------------------------------------------------//
 
             //Indexer indexer = new Indexer();
@@ -123,7 +123,7 @@ namespace OOPS
             //Console.WriteLine($"{indexer[0]}, {indexer[1]}");
             //Console.ReadLine();
 
-            //Indexer
+            //Indexer.
             //-----------------------------------------------------------------------------------------------//
 
             //string detail=string.Empty;
@@ -133,18 +133,57 @@ namespace OOPS
             //Console.WriteLine($"Value outside function (without out): {detail}");
             //Console.ReadLine();
 
-            //out keyword
+            //out keyword.
             //-----------------------------------------------------------------------------------------------//
 
             //ObsoleteClass.Method();
             //Console.ReadLine();
 
-            //obsolete 
+            //Obsolete. 
             //-----------------------------------------------------------------------------------------------//
 
+            //try
+            //{
+            //    ExceptionClass exception = new ExceptionClass();
+            //    exception.Divide(10, 2);
+            //    exception.Divide(10, 0);
+            //}
+            //catch(DivideByZeroException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            //catch(Exception)
+            //{
+            //    Console.WriteLine("Parent exception block executed");
+            //}
+            ////Parent.
+            //finally
+            //{
+            //    Console.WriteLine("Code executed");
+            //}
+            //Console.ReadLine();
 
+            //Exception.
+            //-----------------------------------------------------------------------------------------------//
 
+            try
+            {
+                int firstResult = ExceptionClass.Division(40, 5);
+                Console.WriteLine(firstResult);
+                int secondResult = ExceptionClass.Division(40, 0);
+                Console.WriteLine(secondResult);
+            }
+            catch (Exception ex)
+            {
+            }
+            finally
+            {
+                Console.WriteLine("Code executed");
+            }
+            Console.ReadLine();
 
+            //User Defined Exception.
+            //-----------------------------------------------------------------------------------------------//
         }
     }
 }

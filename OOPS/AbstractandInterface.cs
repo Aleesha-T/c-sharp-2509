@@ -13,9 +13,10 @@ namespace OOPS
         {
             Console.WriteLine("Name: "+class1.Name);
         }
+        //Static method.
     }
 
-    interface I
+    interface IInterface
     {
         void DisplayDetails();
     }
@@ -25,7 +26,8 @@ namespace OOPS
         public override string Name => "Aleesha";
     }
 
-    public class Class2 : I
+    public class Class2 : IInterface
+
     {
         public int Age { get; set; }
         public int Place { get; set; }
