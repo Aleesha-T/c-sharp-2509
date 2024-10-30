@@ -156,6 +156,7 @@ namespace CsharpAssignmentsPart5
 
             //ExceptionClass exceptionClass = new ExceptionClass();
             //int validNumber = exceptionClass.GetUserInput();
+            ////Calling the function.
             //Console.WriteLine("Valid number entered is: "+validNumber);
             //Console.ReadLine();
             //Console.ReadLine();

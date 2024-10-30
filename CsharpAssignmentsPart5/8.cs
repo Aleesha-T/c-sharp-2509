@@ -25,6 +25,7 @@ namespace CsharpAssignmentsPart5
                     Console.WriteLine("Invalid entry. Enter valid number.");
                 }
             }
+            //Prompts the user to enter a valid number.
             return number;
         }
     }
