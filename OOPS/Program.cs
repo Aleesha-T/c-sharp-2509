@@ -1,6 +1,8 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,6 +25,7 @@ namespace OOPS
 
             //Console.ReadLine();
 
+            //get and set properties.
             //-----------------------------------------------------------------------------------------------//
             //int result;
             //Employee employee1 = new Employee();
@@ -35,6 +38,7 @@ namespace OOPS
 
             //Console.ReadLine();
 
+            //Static variable.
             //-----------------------------------------------------------------------------------------------//
 
             //Tour tour = new Tour();
@@ -91,6 +95,7 @@ namespace OOPS
             //details.DisplayAll();
             //Console.ReadLine();
 
+            //Extension of a class.
             //-----------------------------------------------------------------------------------------------//
 
             //string myString = "Aleesha";
@@ -133,7 +138,7 @@ namespace OOPS
             //Console.WriteLine($"Value outside function (without out): {detail}");
             //Console.ReadLine();
 
-            //out keyword.
+            //Using of out keyword.
             //-----------------------------------------------------------------------------------------------//
 
             //ObsoleteClass.Method();
@@ -166,24 +171,85 @@ namespace OOPS
             //Exception.
             //-----------------------------------------------------------------------------------------------//
 
-            try
-            {
-                int firstResult = ExceptionClass.Division(40, 5);
-                Console.WriteLine(firstResult);
-                int secondResult = ExceptionClass.Division(40, 0);
-                Console.WriteLine(secondResult);
-            }
-            catch (Exception ex)
-            {
-            }
-            finally
-            {
-                Console.WriteLine("Code executed");
-            }
-            Console.ReadLine();
+            //try
+            //{
+            //    int firstResult = ExceptionClass.Division(40, 5);
+            //    Console.WriteLine(firstResult);
+            //    int secondResult = ExceptionClass.Division(40, 0);
+            //    Console.WriteLine(secondResult);
+            //}
+            //catch (Exception ex)
+            //{
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Code executed");
+            //}
+            //Console.ReadLine();
 
             //User Defined Exception.
             //-----------------------------------------------------------------------------------------------//
+
+            //int[,] TwoDimensionalArray = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+            //for (int i = 0; i < TwoDimensionalArray.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < TwoDimensionalArray.GetLength(1); j++)
+            //    {
+            //        Console.Write($"{TwoDimensionalArray[i, j]} ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.ReadLine();
+
+            //Two Dimensional Array.
+            //-----------------------------------------------------------------------------------------------//
+
+            //    int[] Array = { 13, 10, 11, 7, 8, 45, 59, 36, 29, 18, 15 };
+            //Label: for (int i = 0; i < Array.Length - 1; i++)
+            //    {
+            //        if (Array[i] > Array[i + 1])
+            //        {
+            //            int temp = Array[i];
+            //            Array[i] = Array[i + 1];
+            //            Array[i + 1] = temp;
+            //        }
+            //    }
+            //    for (int i = 0; i < Array.Length - 1; i++)
+            //    {
+            //        if (Array[i] > Array[i + 1])
+            //        {
+            //            goto Label;
+            //        }
+            //    }
+            //    for (int j = 0; j < Array.Length; j++)
+            //    {
+            //        Console.Write($"{Array[j]} ");
+            //    }
+            //    Console.ReadLine();
+
+            //Sorting Array without using in-built function.
+            //-----------------------------------------------------------------------------------------------//
+
+            //int[] myArray = { 1,45, 2,6, 4, 8,92};
+            //int largest=myArray[0];
+            //int secondLargest =myArray[1];
+            //for (int i = 0; i < myArray.Length; i++)
+            //{
+            //    if (myArray[i] > largest)
+            //    {
+            //        int temp = largest;
+            //        largest = myArray[i];
+            //        secondLargest = temp;
+            //    }
+            //}
+            //Console.WriteLine(largest);
+            //Console.WriteLine(secondLargest);
+            //Console.ReadLine();
+
+            //To find second largest number.
+            //-----------------------------------------------------------------------------------------------//
+
+
         }
     }
 }

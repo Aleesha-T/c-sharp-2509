@@ -59,7 +59,6 @@
     <Compile Include="RefKeyword.cs" />
     <Compile Include="Reverse.cs" />
     <Compile Include="Tour.cs" />
-    <Compile Include="Types.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

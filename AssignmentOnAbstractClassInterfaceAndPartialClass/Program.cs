@@ -90,7 +90,7 @@ namespace AssignmentOnAbstractClassInterfaceAndPartialClass
             //int secondnumber = 8;
             //bool myNewBool = secondnumber.IsEven();
             //Console.WriteLine(myNewBool);
-            //Console.ReadLine(); 
+            //Console.ReadLine();
 
             //-------------------------------------------------------------------------------//
 
@@ -113,8 +113,8 @@ namespace AssignmentOnAbstractClassInterfaceAndPartialClass
             //Book thirdbook = new Book("Alice in Wonderland", "Lewis Carroll");
             //Book fourthbook = new Book("Peter Pan", "J M Barrie");
             //Library library = new Library();
-            //library[0]=firstbook; //assigning first book to index 0
-            //library[1]=secondbook; //assigning second book to index 1
+            //library[0] = firstbook; //assigning first book to index 0
+            //library[1] = secondbook; //assigning second book to index 1
             //library[2] = thirdbook; //assigning third book to index 2
             //library[3] = fourthbook; //assigning fourth book to index 3
             //library.DisplayBooks(library); //display all the books
@@ -164,7 +164,7 @@ namespace AssignmentOnAbstractClassInterfaceAndPartialClass
 
             ////Retrieving class attribute
             //Type type = typeof(Calculator);
-            //object[] classAttributes= type.GetCustomAttributes(false);
+            //object[] classAttributes = type.GetCustomAttributes(false);
             //foreach (DeveloperAttribute attribute in classAttributes)
             //{
             //    Console.WriteLine($"Class Developer Name: {attribute.Name}, Last Modified Date: {attribute.LastModifiedDate}");
@@ -173,7 +173,7 @@ namespace AssignmentOnAbstractClassInterfaceAndPartialClass
             ////Retrieving method attribute
             //var methodDetail = type.GetMethod("Add");
             //object[] methodAttributes = methodDetail.GetCustomAttributes(false);
-            //foreach(DeveloperAttribute attribute in methodAttributes)
+            //foreach (DeveloperAttribute attribute in methodAttributes)
             //{
             //    Console.WriteLine($"Method Developer Name: {attribute.Name}, Last Modified Date: {attribute.LastModifiedDate}");
             //}

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DA92D10C-AD94-474D-B39F-CB81212482BA}</ProjectGuid>
+    <ProjectGuid>{FE461D9C-5405-40F3-871F-4AD0D2B8A86F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CsharpAssignmentsPart5</RootNamespace>
-    <AssemblyName>CsharpAssignmentsPart5</AssemblyName>
+    <RootNamespace>ArraysAndStrings</RootNamespace>
+    <AssemblyName>ArraysAndStrings</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,13 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=3.0.2.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>packages\log4net.3.0.2\lib\net462\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,24 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="1.cs" />
-    <Compile Include="11.cs" />
-    <Compile Include="12.cs" />
-    <Compile Include="13.cs" />
-    <Compile Include="15.cs" />
-    <Compile Include="2.cs" />
-    <Compile Include="3.cs" />
-    <Compile Include="4.cs" />
-    <Compile Include="5.cs" />
-    <Compile Include="6.cs" />
-    <Compile Include="8.cs" />
-    <Compile Include="9.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

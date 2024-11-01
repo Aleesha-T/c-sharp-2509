@@ -79,8 +79,8 @@ namespace AssignmentOnPolymorphism
             ////In this program, each employee should have a collection of tasks(stored in an array) assigned to them.
             ////Use arrays as properties in the class to handle this data, and demonstrate how polymorphism and arrays work together in the solution.
 
-            //ManagerNew manager = new ManagerNew(new string[] {"Task1", "Task2"});
-            //DeveloperNew developer = new DeveloperNew(new string[] {"DTask1", "DTask2"});
+            //ManagerNew manager = new ManagerNew(new string[] { "Task1", "Task2" });
+            //DeveloperNew developer = new DeveloperNew(new string[] { "DTask1", "DTask2" });
             //manager.Display();
             //Console.WriteLine();
             //developer.Display();
@@ -128,7 +128,7 @@ namespace AssignmentOnPolymorphism
             ////Assignment 10. Polymorphism in C# with Readonly Property
             ////Create a C# program that demonstrates the concept of multiple inheritance through interfaces. 
             //// The program will define two interfaces, IMovable and IDrawable, and implement them in a class Car that showcases how a class can inherit from multiple interfaces.
-        
+
             //Laptop laptop = new Laptop();
             //laptop.LaptopCount();
             //Lenovo lenovo = new Lenovo();

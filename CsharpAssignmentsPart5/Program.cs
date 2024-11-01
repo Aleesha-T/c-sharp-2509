@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -12,14 +14,14 @@ namespace CsharpAssignmentsPart5
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             ////Assignment 1. Identify the need for single and multidimensional arrays as properties of a class
             ////Question : Create a Library class to store and manage books in a single-dimensional array where
             ////each element represents a book title.Also, use a two-dimensional array in a Classroom class
             ////where each element represents the seat of a student based on rows and columns.
 
-            //Library library = new Library(new string[] { "Peter Pan", "Alice in Wonderland", "The Da Vinci Code", 
+            //Library library = new Library(new string[] { "Peter Pan", "Alice in Wonderland", "The Da Vinci Code",
             //                                           "The Twilight Saga", "Harry Potter" });
             ////Single dimensional array initialized.
             //library.Display();
@@ -74,8 +76,8 @@ namespace CsharpAssignmentsPart5
             //Circle secondCircle = firstCircle;
             ////Sending a copy of the value in first circle.
             //Console.WriteLine("Radius of circles before modifying:");
-            //Console.WriteLine("Radius of first circle: "+firstCircle.Radius);
-            //Console.WriteLine("Radius of second circle: "+secondCircle.Radius);
+            //Console.WriteLine("Radius of first circle: " + firstCircle.Radius);
+            //Console.WriteLine("Radius of second circle: " + secondCircle.Radius);
             //secondCircle.Radius = 10;
             ////Modifying the value in second circle.
             //Console.WriteLine("\nRadius of circles after modifying:");
@@ -102,9 +104,9 @@ namespace CsharpAssignmentsPart5
             ////player’s score and increases it by 10.
 
             //int PlayerScore = 8;
-            //Console.WriteLine("Score at the beginning: "+PlayerScore);
+            //Console.WriteLine("Score at the beginning: " + PlayerScore);
             //Score.IncreaseScore(ref PlayerScore);
-            //Console.WriteLine("Current score: "+PlayerScore);
+            //Console.WriteLine("Current score: " + PlayerScore);
             //Console.ReadLine();
 
             //-----------------------------------------------------------------------------------------------//
@@ -113,8 +115,8 @@ namespace CsharpAssignmentsPart5
             ////Question: Create a method Divide that takes two integers, calculates their quotient and
             ////remainder, and returns both values using the out keyword.
 
-            //int firstNumber=10;
-            //int secondNumber=5;
+            //int firstNumber = 10;
+            //int secondNumber = 5;
             //int quotient;
             //int remainder;
             //Calculation.Divide(firstNumber, secondNumber, out quotient, out remainder);
@@ -135,7 +137,7 @@ namespace CsharpAssignmentsPart5
             //}
             //catch (FileNotFoundException ex)
             //{
-            //    Console.WriteLine("FileNotFoundException caught: "+ex.Message);
+            //    Console.WriteLine("FileNotFoundException caught: " + ex.Message);
             //}
             //try
             //{
@@ -157,19 +159,124 @@ namespace CsharpAssignmentsPart5
             //ExceptionClass exceptionClass = new ExceptionClass();
             //int validNumber = exceptionClass.GetUserInput();
             ////Calling the function.
-            //Console.WriteLine("Valid number entered is: "+validNumber);
+            //Console.WriteLine("Valid number entered is: " + validNumber);
             //Console.ReadLine();
             //Console.ReadLine();
 
             //-----------------------------------------------------------------------------------------------//
 
+            ////Assignment 9. Multiple Catch Blocks
+            ////Question: Create a method that calculates the division of two integers. 
+            ////Use multiple catch blocks to handle DivideByZeroException and FormatException.
 
+            //try
+            //{
+            //    Console.WriteLine("Enter numerator: ");
+            //    int firstNumber = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("Enter denominator:");
+            //    int secondNumber = Convert.ToInt32(Console.ReadLine());
+            //    Calculate.Divide(firstNumber, secondNumber);
+            //}
+            //catch (DivideByZeroException)
+            //{
+            //    Console.WriteLine("Division by zero is not possible");
+            //}
+            //catch (FormatException)
+            //{
+            //    Console.WriteLine("Invalid format");
+            //}
+            //Console.ReadLine();
 
+            //-----------------------------------------------------------------------------------------------//
 
+            ////Assignment 10. Finally Block
+            ////Question: Write a method ReadFile that opens a file, reads its contents, and closes it. 
+            ////Use a finally block to ensure the file is closed, even if an exception occurs.
 
+            //StreamReader reader = null;
+            //try
+            //{
+            //    reader = new StreamReader("Aleesha.txt");
+            //    Console.WriteLine(reader.ReadToEnd());
+            //}
+            //catch (FileNotFoundException)
+            //{
+            //    Console.WriteLine("File not found");
+            //}
+            //finally
+            //{
+            //    if (reader != null)
+            //    {
+            //        reader.Close();
+            //    }
+            //    //This will ensure that the file will be closed.
+            //}
+            //Console.ReadLine();
 
+            //-----------------------------------------------------------------------------------------------//
 
+            ////Assignment 11. Difference between throw and throws 
+            ////Question: Explain the purpose of the throw keyword in C#. 
+            ////Create a method ValidateAge that throws an exception if the age is below 18, and handle it in the calling method.
 
+            //try
+            //{
+            //    Throw.ValidateAge(27);
+            //    Throw.ValidateAge(17);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            //Console.ReadLine();
+
+            //-----------------------------------------------------------------------------------------------//
+
+            ////Assignment 12. Custom Exception 
+            ////Question: Create a custom exception class NegativeNumberException to handle negative inputs.
+            ////Write a method CheckNumber that throws this exception if the number is negative.
+
+            //try
+            //{
+            //    Check.CheckNumber(8);
+            //    Check.CheckNumber(-3);
+            //}
+            //catch (NegativeNumberException ex)
+            //{
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Code executed");
+            //}
+            //Console.ReadLine();
+
+            //-----------------------------------------------------------------------------------------------//
+
+            //////Assignment 13. Logging Exceptions
+
+            //LoggingExample.Divide(10, 0);
+            //Console.ReadLine();
+
+            //-----------------------------------------------------------------------------------------------//
+
+            ////Assignment 15.Explain the Difference between Exception(Checked Exceptions)
+            ////and RuntimeException(Unchecked Exceptions)
+
+            //FileProcessor processor = new FileProcessor();
+            //processor.ReadFileContent("non-existent.txt");
+            //MathOperations operations = new MathOperations();
+            //operations.Divide(5, 0);
+            //try
+            //{
+            //    Person person = new Person();
+            //    person.SetAge(-6);
+            //}
+            //catch (InvalidAgeException)
+            //{
+            //}
+            //Console.ReadLine();
+
+            //-----------------------------------------------------------------------------------------------//
         }
     }
 }
