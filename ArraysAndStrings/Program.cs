@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ArraysAndStrings
 {
@@ -23,7 +24,7 @@ namespace ArraysAndStrings
             ////Gets rows and columns.
             //int[,] firstMatrix = new int[rows_firstMatrix, columns_firstMatrix];
             //int[,] secondMatrix = null;
-           
+
             //firstMatrix=Matrix.GetMatrix(firstMatrix, rows_firstMatrix, columns_firstMatrix);
             ////Gets matrix.
 
@@ -95,6 +96,101 @@ namespace ArraysAndStrings
             //Console.ReadLine();
 
             //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 2. Write C# programs to sort an array using bubble sort and insertion sort. 
+
+            //int[] myArray = { 5, 8, 3, 4, 9, 3, 7 };
+            //int[] mySecondArray = { 7, 5, 6, 4, 9, 3, 2 };
+            //Sort.BubbleSort(myArray);
+            ////Bubble sort.
+            //Console.WriteLine("Sorted array using bubble sort is:");
+            //Sort.Display(myArray);
+            ////Displays sorted array.
+            //Sort.InsertionSort(mySecondArray);
+            ////Insertion sort.
+            //Console.WriteLine("\nSorted array using insertion sort is:");
+            //Sort.Display(mySecondArray);
+            ////Displays sorted array.
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 3. Write C# programs to search an array using linear search and binary search.
+
+            //string[] myString = { "apple", "orange", "grapes", "pomengranate", "avocado", "kiwi" };
+            //int[] myArray = { 22, 8, 4, 11, 6, 9, 7, 6, 54, 35, 74, 36, 97, 84, 1 };
+            //Console.WriteLine("Enter a fruit to search.");
+            //var fruit = Console.ReadLine();
+            //Search.LinearSearch(fruit, myString);
+            ////Linear Search.
+            //Console.WriteLine("Enter a number to search.");
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //int index = Search.BinarySearch(number, myArray);
+            ////Binary Search.
+            //if (index == -1)
+            //{
+            //    Console.WriteLine("Entered number not found");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Entered number, {number} found at index: {index}");
+            //}
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 4. Array Calculations: write C# programs for finding median, mode value, 
+            ////highest, second highest and duplicate elements in an array.
+
+            //int[] myNumbers = { 89, 5, 47, 55, 32, 4, 6, 47, 5, 1, 3, 3, 5, 4, 9, 21 };
+            //Calculations.DisplaySorted(myNumbers);
+            //double median= Calculations.Median(myNumbers);
+            ////Gets median.
+            //Console.WriteLine($"\nMedian is: {median}");
+            //int mode = Calculations.Mode(myNumbers);
+            ////Gets mode.
+            //Console.WriteLine($"Mode is: {mode}");
+            //Calculations.Largest(myNumbers);
+            ////Gets largest and second largest values.
+            //Calculations.Duplicates(myNumbers);
+            ////Gets duplicate values.
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////String Manipulations 
+            ////Assignment 5.Write a C# programs to count vowels, consonants and special characters.
+
+            //Console.WriteLine("Enter something.");
+            //string enteredString = Console.ReadLine();
+            //enteredString = enteredString.ToLower();
+            //Count.CountCharacters(enteredString);
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 6. Write a C# program to reverse a string. 
+
+            //Console.WriteLine("Enter a string.");
+            //string enteredValue = Console.ReadLine();
+            //String.Reverse(enteredValue);
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 7. Write a C# program to find substring occurrence within a main string. 
+
+            //Console.WriteLine("Enter a string.");
+            //string enteredString = Console.ReadLine();
+            //Console.WriteLine("Enter substring");
+            //string subString = Console.ReadLine();
+            //SubString.FindSubString(enteredString, subString);
+            ////Finds no. of occurences of a substring.
+            //Console.ReadLine();
+
+
+
+
 
         }
     }

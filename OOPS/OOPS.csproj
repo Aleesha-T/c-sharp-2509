@@ -44,9 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractandInterface.cs" />
+    <Compile Include="Anonymous.cs" />
+    <Compile Include="Delegate.cs" />
     <Compile Include="Details.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeNew.cs" />
+    <Compile Include="EventHandlerClass.cs" />
     <Compile Include="Exception.cs" />
     <Compile Include="Extension.cs" />
     <Compile Include="Indexer.cs" />

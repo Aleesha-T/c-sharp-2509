@@ -249,6 +249,43 @@ namespace OOPS
             //To find second largest number.
             //-----------------------------------------------------------------------------------------------//
 
+            //var anonymousItem = new { itemNo = 1, itemName = "Pen", itemPrice = 10.0f };
+            //Console.WriteLine($"Sl. No.: {anonymousItem.itemNo}, Name: {anonymousItem.itemName}, Price: {anonymousItem.itemPrice}");
+            //Anonymous.Display(anonymousItem);
+            //Console.ReadLine();
+
+            //Anonymous object, use of dynamic and var keywords.
+            //-----------------------------------------------------------------------------------------------//
+
+            //DelegateClass.calculate area = new DelegateClass.calculate(DelegateClass.Area);
+            //area(5);
+            //Console.ReadLine();
+
+            //Delegate
+            //-----------------------------------------------------------------------------------------------//
+
+            //DelegateClass.calculate area1 = new DelegateClass.calculate(DelegateClass.Area);
+            //area1 += DelegateClass.Perimeter;
+            //area1(3);
+            //Console.ReadLine();
+
+            //Multicasting Delegate.
+            //-----------------------------------------------------------------------------------------------//
+
+            //EventHandlerClass eventHandlerClass = new EventHandlerClass();
+            //eventHandlerClass.DetectName += EventHandlerClass.EventHandlerClass_DetectName;
+            //Console.WriteLine("Enter a name");
+            //int value = 0;
+            //while (value < 5)
+            //{
+            //    var Name = Console.ReadLine();
+            //    eventHandlerClass.NameHandler(Name);
+            //    value++;
+            //}
+            //Console.ReadLine();
+
+            //EventHandler.
+            //-----------------------------------------------------------------------------------------------//   
 
         }
     }
