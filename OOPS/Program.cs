@@ -287,6 +287,33 @@ namespace OOPS
             //EventHandler.
             //-----------------------------------------------------------------------------------------------//   
 
+            //Async.firstMethod();
+            //Async.secondMethod();
+            //Console.ReadLine();
+
+            //Asynchronous method.
+            //-----------------------------------------------------------------------------------------------//   
+
+            //Async.Call();
+            //Async.secondMethod();
+            //Console.ReadLine();
+
+            //-----------------------------------------------------------------------------------------------//   
+
+            //EmployeeClass[] employee =
+            //{
+            //    new EmployeeClass() {ID=1, Name = "Aleesha", Age=21 },
+            //    new EmployeeClass() {ID=2,Name="Sreelakshmi", Age=22 },
+            //    new EmployeeClass() {ID=3, Name = "Arya", Age=22 },
+            //    new EmployeeClass() {ID=4,Name = "Ganesh", Age=26 },
+            //    new EmployeeClass() {ID=5,Name="Rithin",Age=22 },
+            //};
+            //var employeeNew = employee.Where(x => x.ID == 4);
+
+            //Console.ReadLine();
+
+            //LINQ Query.
+            //-----------------------------------------------------------------------------------------------//   
         }
     }
 }

@@ -25,7 +25,7 @@ namespace ArraysAndStrings
             //int[,] firstMatrix = new int[rows_firstMatrix, columns_firstMatrix];
             //int[,] secondMatrix = null;
 
-            //firstMatrix=Matrix.GetMatrix(firstMatrix, rows_firstMatrix, columns_firstMatrix);
+            //firstMatrix = Matrix.GetMatrix(firstMatrix, rows_firstMatrix, columns_firstMatrix);
             ////Gets matrix.
 
             //Console.WriteLine("The entered matrix is: ");
@@ -50,14 +50,14 @@ namespace ArraysAndStrings
             //    {
             //        Console.WriteLine("Invalid rows or columns\n");
             //        goto Label1;
-            //    }   
+            //    }
             //    //Validation for multiplication
             //    else
             //    {
-            //        secondMatrix = new int[rows_secondMatrix, columns_secondMatrix];                    
+            //        secondMatrix = new int[rows_secondMatrix, columns_secondMatrix];
             //        secondMatrix = Matrix.GetMatrix(secondMatrix, rows_secondMatrix, columns_secondMatrix);
             //        //Gets matrix.
-            //        Console.WriteLine("Entered matrix is: ");                    
+            //        Console.WriteLine("Entered matrix is: ");
             //        Matrix.DisplayMatrix(secondMatrix, rows_secondMatrix, columns_secondMatrix);
             //        //Displays entered matrix.
             //    }
@@ -67,7 +67,7 @@ namespace ArraysAndStrings
             //        int[,] sum = new int[rows_firstMatrix, columns_firstMatrix];
             //        sum = Matrix.FindSum(sum, firstMatrix, secondMatrix, rows_firstMatrix, columns_firstMatrix);
             //        //Performs addition.
-            //        Console.WriteLine("Sum:");                    
+            //        Console.WriteLine("Sum:");
             //        Matrix.DisplayMatrix(sum, rows_firstMatrix, columns_firstMatrix);
             //        //Displays sum.
             //    }
@@ -78,17 +78,17 @@ namespace ArraysAndStrings
             //        product = Matrix.FindProduct(product, firstMatrix, secondMatrix, rows_firstMatrix,
             //                                     columns_secondMatrix, columns_firstMatrix);
             //        //Performs multiplication.
-            //        Console.WriteLine("Product:");                    
+            //        Console.WriteLine("Product:");
             //        Matrix.DisplayMatrix(product, rows_firstMatrix, columns_secondMatrix);
             //        //Displays product.
             //    }
             //}
             //else
             //{
-            //    int[,] transpose = new int[columns_firstMatrix,rows_firstMatrix];
+            //    int[,] transpose = new int[columns_firstMatrix, rows_firstMatrix];
             //    Matrix.FindTranspose(transpose, firstMatrix, rows_firstMatrix, columns_firstMatrix);
             //    //Finds transpose.
-            //    Console.WriteLine("Transpose is: ");                
+            //    Console.WriteLine("Transpose is: ");
             //    Matrix.DisplayMatrix(transpose, columns_firstMatrix, rows_firstMatrix);
             //    //Displays transpose.
             //}
@@ -144,7 +144,7 @@ namespace ArraysAndStrings
 
             //int[] myNumbers = { 89, 5, 47, 55, 32, 4, 6, 47, 5, 1, 3, 3, 5, 4, 9, 21 };
             //Calculations.DisplaySorted(myNumbers);
-            //double median= Calculations.Median(myNumbers);
+            //double median = Calculations.Median(myNumbers);
             ////Gets median.
             //Console.WriteLine($"\nMedian is: {median}");
             //int mode = Calculations.Mode(myNumbers);
@@ -188,10 +188,120 @@ namespace ArraysAndStrings
             ////Finds no. of occurences of a substring.
             //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------------------//
 
+            ////Assignment 8. Write a C# program to convert string to uppercase, lowercase, and title case.
 
+            //Console.WriteLine("Enter a string.");
+            //var inputString = Console.ReadLine();
+            //Case.Upper(inputString);
+            ////Upper case.
+            //Case.Lower(inputString);
+            ////Lower case.
+            //Case.Title(inputString);
+            ////Title case.
+            //Console.ReadLine();
 
+            //-------------------------------------------------------------------------------------------------//
 
+            ////Assignment 9. Write a C# program to remove whitespace from a string. 
+
+            //Console.WriteLine("Enter a string.");
+            //var inputString = Console.ReadLine();
+            //inputString = inputString.Replace(" ", "");
+            ////Replacing whitespace with null.
+            //Console.WriteLine($"String after removing whitespace: {inputString}");
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 10. Write a C# program to replace all occurrences of a substring. 
+
+            //Console.WriteLine("Enter a string.");
+            //var inputString = Console.ReadLine();
+            //Console.WriteLine("Enter a substring to replace");
+            //var inputSubString = Console.ReadLine();
+            //inputString = inputString.Replace(inputSubString, " ");
+            ////Replacing substring with white space.
+            //Console.WriteLine($"String after removing substring: {inputString}");
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 11. Write a C# program to find the longest word in a sentence. 
+
+            //Console.WriteLine("Enter a sentence.");
+            //var input = Console.ReadLine();
+            //Sentence.FindLongest(input);
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 12. Write a C# program to count words in a sentence.
+
+            //Console.WriteLine("Enter a sentence.");
+            //var input = Console.ReadLine();
+            //Sentence.CountWords(input);
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 13. Write a C# program to remove duplicate characters from a string.
+
+            //Console.WriteLine("Enter a sentence.");
+            //var input = Console.ReadLine();
+            //StringManipulation.RemoveDuplicate(input);
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 14. Write a C# program to check if two strings are anagrams. 
+
+            //Console.WriteLine("Enter two strings.");
+            //string firstString = Console.ReadLine();
+            //string secondString = Console.ReadLine();
+            //Anagram.CheckAnagram(firstString, secondString);
+            ////Checking if the strings are anagrams.
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 15. Write a C# program to find the frequency of each character in a string.
+
+            //Console.WriteLine("Enter a string.");
+            //string input = Console.ReadLine();
+            //Frequency.FindFrequency(input);
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 16. Write a C# program to find the first non-repeating character in a string.
+
+            //Console.WriteLine("Enter a string.");
+            //string input = Console.ReadLine();
+            //Repeating.FindFirstNonRepeating(input);
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 17. Write a C# program to reverse words in a sentence. 
+
+            //Console.WriteLine("Enter a sentence.");
+            //string inputSentence = Console.ReadLine();
+            //Reverse.ReverseWords(inputSentence);
+            ////Reverse words in a sentence.
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
+
+            ////Assignment 18. Write a C# program to check if a string contains only digits.
+
+            //Console.WriteLine("Enter a string.");
+            //string inputString = Console.ReadLine();
+            //Check.CheckString(inputString);
+            //Console.ReadLine();
+
+            //-------------------------------------------------------------------------------------------------//
         }
     }
 }

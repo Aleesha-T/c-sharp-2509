@@ -8,27 +8,59 @@ namespace ArraysAndStrings
 {
     public class Count
     {
+        //public static void CountCharacters(string enteredValue)
+        //{
+        //    int vowels = 0;
+        //    int consonants = 0;
+        //    int specialCharacters = 0;
+        //    for(int i = 0; i < enteredValue.Length; i++)
+        //    {
+        //        if(enteredValue[i] == 'a'|| enteredValue[i] == 'e' || enteredValue[i] == 'i' || 
+        //            enteredValue[i] == 'o' || enteredValue[i] == 'u')
+        //        {
+        //            vowels++;
+        //        }
+        //        else if (enteredValue[i] == '!' || enteredValue[i] == '@' || enteredValue[i] == '#' || enteredValue[i] == '$' 
+        //            || enteredValue[i] == '%' || enteredValue[i] == '^' || enteredValue[i] == '&' || enteredValue[i] == '*')
+        //        {
+        //            specialCharacters++;
+        //        }
+        //        else
+        //        {                    
+        //            consonants++;
+        //        }
+        //    }
+        //    Console.WriteLine($"No. of vowels: {vowels}, no. of consonants: {consonants}, no. of special characters: {specialCharacters}");
+        //}
+
+        //OR
+
         public static void CountCharacters(string enteredValue)
         {
             int vowels = 0;
             int consonants = 0;
             int specialCharacters = 0;
-            for(int i = 0; i < enteredValue.Length; i++)
+            for (int i = 0; i < enteredValue.Length; i++)
             {
-                if(enteredValue[i] == 'a'|| enteredValue[i] == 'e' || enteredValue[i] == 'i' || 
-                    enteredValue[i] == 'o' || enteredValue[i] == 'u')
+                if (char.IsLetter(enteredValue[i]))
                 {
-                    vowels++;
+                    if (enteredValue[i] == 'a' || enteredValue[i] == 'e' || enteredValue[i] == 'i' ||
+                    enteredValue[i] == 'o' || enteredValue[i] == 'u')
+                    {
+                        vowels++;
+                    }
+                    //Checks vowels.
+                    else
+                    {
+                        consonants++;
+                    }
+                    //Checks consonants.
                 }
-                else if (enteredValue[i] == '!' || enteredValue[i] == '@' || enteredValue[i] == '#' || enteredValue[i] == '$' 
-                    || enteredValue[i] == '%' || enteredValue[i] == '^' || enteredValue[i] == '&' || enteredValue[i] == '*')
+                else if (!char.IsDigit(enteredValue[i]))
                 {
                     specialCharacters++;
                 }
-                else
-                {                    
-                    consonants++;
-                }
+                //Checks special characters.
             }
             Console.WriteLine($"No. of vowels: {vowels}, no. of consonants: {consonants}, no. of special characters: {specialCharacters}");
         }
