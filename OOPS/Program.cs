@@ -295,9 +295,9 @@ namespace OOPS
             //-----------------------------------------------------------------------------------------------//   
 
             //Async.Call();
-            //Async.secondMethod();
             //Console.ReadLine();
 
+            //Second method runs only after the completion of first method.
             //-----------------------------------------------------------------------------------------------//   
 
             //EmployeeClass[] employee =

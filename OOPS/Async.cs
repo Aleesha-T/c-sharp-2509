@@ -36,7 +36,7 @@ namespace OOPS
                 for (int i = 0; i < 20; i++)
                 {
                     Console.WriteLine("New method");
-                    //Task.Delay(100).Wait();
+                    Task.Delay(100).Wait();
                 }
             });
             return count;
@@ -45,6 +45,7 @@ namespace OOPS
         {
             var result = newMethod();
             await result;
+            secondMethod();
         }
     }
 }
