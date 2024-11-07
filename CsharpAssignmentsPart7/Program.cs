@@ -1,14 +1,22 @@
 ﻿using System;
 using System.CodeDom.Compiler;
+using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Net.Http;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static CsharpAssignmentsPart7.Calculation;
 using static CsharpAssignmentsPart7.Delegates;
 using static CsharpAssignmentsPart7.StringOperation;
 
@@ -171,19 +179,183 @@ namespace CsharpAssignmentsPart7
             ////2.Sort the list by price in descending order.
             ////3.Select and display only the names of products from the filtered list.
 
-            List<Products> products = new List<Products>();
+            //List<Products> products = new List<Products>();
 
-            Products products1 = new Products() { Name = "Laptop", Price = 50000 };
-            Products products2 = new Products() { Name = "Mouse", Price = 100 };
-            Products products3 = new Products() { Name = "Pen", Price = 10 };
-            products.Add(products1);
-            products.Add(products2);
-            products.Add(products3);
+            //Products products1 = new Products() { Name = "Laptop", Price = 50000 };
+            //Products products2 = new Products() { Name = "Mouse", Price = 100 };
+            //Products products3 = new Products() { Name = "Pen", Price = 10 };
+            //Products products4 = new Products() { Name = "Speaker", Price = 5000 };
+            //products.Add(products1);
+            //products.Add(products2);
+            //products.Add(products3);
+            //products.Add(products4);
 
-            var filtered = products.Where(x => x.Price > 50);
-            var ordered = filtered.OrderByDescending(x => x.Price);
+            //var filtered = products.Where(x => x.Price > 50);
+            ////Filter according to price.
+            //var ordered = filtered.OrderByDescending(x => x.Price);
+            ////Order according to price.
+            //foreach (var item in ordered)
+            //{
+            //    Console.WriteLine("Name: "+item.Name+", Price: "+item.Price);
+            //}
+            ////Display the filtered and ordered.
+            //Console.ReadLine();
 
+            ////-----------------------------------------------------------------------------------------------////
 
+            ////Assignment 10.Delegate as a Callback Mechanism
+            ////Question:
+            ////Create a delegate called CalculationDelegate that takes two integers and returns an integer. 
+            ////Implement methods for addition and subtraction, and write a method Calculate that accepts two
+            ////integers and a delegate as parameters.Use the delegate to perform addition and subtraction
+            ////operations by passing different methods.
+
+            //CalculationDelegate calculation = null; 
+            //Calculate(4, 2, calculation);
+            //Console.ReadLine();
+
+            ////-----------------------------------------------------------------------------------------------////
+
+            ////Assignment 11. Introduction to Asynchronous Programming 
+            ////Question:
+            ////Write a C# program that simulates a long-running operation using Task.Delay() and runs 
+            ////asynchronously. Display a message before and after the operation completes.
+
+            //Console.WriteLine("Main method start");
+            //Async.AsyncMethod();
+            ////Calling async method.
+            //Console.WriteLine("Main method end");
+            ////This will run even before the completion of async method.
+            //Console.ReadLine();
+
+            ////-----------------------------------------------------------------------------------------------////
+
+            ////Assignment 12. Async and Await Keywords 
+            ////Question:
+            ////Create a method that downloads data from a sample URL asynchronously.Use HttpClient to
+            ////fetch the data and print the length of the content.The method should use async and await keywords.
+
+            //try
+            //{
+            //    string url = /*"https://www.w3schools.com/";*/ "www.example.com";
+            //    Download.Call(url);
+            //}
+            //catch(Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //}
+            //Console.ReadLine();
+
+            ////-----------------------------------------------------------------------------------------------////
+
+            ////Assignment 13. Task and Task<T> 
+            ////Question:
+            ////Write a C# program that calculates the sum of an array of integers asynchronously using 
+            ////Task<int>.Return the result from the asynchronous method and display it.
+
+            //int[] numbers = { 1, 2, 3, 4, 5 };
+            //TaskClass.Call(numbers);
+            //Console.WriteLine("Task running");
+            ////Even if this is after calling the function, this gets executed first.
+            //Console.ReadLine();
+
+            ////-----------------------------------------------------------------------------------------------////
+
+            ////Assignment 14. Handling Exceptions in Asynchronous Methods 
+            ////Question:
+            ////Modify the previous example to handle exceptions that might occur during the sum calculation. 
+            ////Catch the exception in the Main method and display an error message. 
+
+            //try
+            //{
+            //    int[] numbers = { 1, 2, 3, 4, 5 };
+            //    TaskClass.Call(numbers);
+            //    Console.WriteLine("Task running");
+            //    //Even if this is after calling the function, this gets executed first.
+            //}
+            //catch (Exception)
+            //{
+            //    Console.WriteLine("An error has occured.");
+            //}
+            //Console.ReadLine();
+
+            ////-----------------------------------------------------------------------------------------------////
+
+            ////Assignment 15. Parallel Programming with Task Parallel Library (TPL) 
+            ////Question:
+            ////Create a program that runs multiple tasks in parallel to simulate multiple operations, such as
+            ////calculating the factorial of different numbers.Print the result of each task when completed.
+
+            //int[] numbers = { 5, 12, 3 };
+            //Parallel.ForEach(numbers, number =>
+            //{
+            //    long result = ParallelClass.Factorial(number);
+            //    Console.WriteLine("Factorial of " + number + " is " + result);
+            //});
+            //Console.WriteLine("Complete.");
+            //Console.ReadLine();
+
+            ////-----------------------------------------------------------------------------------------------////
+
+            ////Assignment 16. LINQ Query Syntax and Method Syntax 
+            ////Question: Write a LINQ query using both query syntax and method syntax to retrieve all
+            ////numbers greater than 5 from a list of integers.
+
+            //List <int> numbers = new List<int> { 3, 5, 1, 4, 6, 8, 10, 32, 41, 3, 6 };
+            ////List of integers.
+            //var results = from number in numbers where number>5 select number;
+            ////Query syntax.
+            //Console.WriteLine("Numbers greater than 5 are:");
+            //foreach(var result in results)
+            //{
+            //    Console.Write(result+" ");
+            //}
+            ////Displaying results.
+            //var newResults = numbers.Where(x => x > 5);
+            ////Method syntax.
+            //Console.WriteLine("\nNumbers greater than 5 are:");
+            //foreach (var result in newResults)
+            //{
+            //    Console.Write(result + " ");
+            //}
+            ////Displaying new results.
+            //Console.ReadLine();
+
+            ////-----------------------------------------------------------------------------------------------////
+
+            ////Assignment 17. LINQ Operators (Select, Where, GroupBy, Join, etc.) 
+            ////Question 1: Given a list of strings representing student names, write a LINQ query that selects
+            ////the names starting with the letter 'A' and orders them alphabetically.
+
+            //List<string> studentNames = new List<string> { "Aleesha", "Ameya", "Riya", "Aisha", "Becca", "Julie" };
+            ////List of names.
+            //var names = studentNames.Where(x => x[0] == 'A').OrderBy(x=>x);
+            ////Selects names starting with A and orders them alphabetically.
+            //Console.WriteLine("Filtered and ordered list:");
+            //foreach (var name in names)
+            //{
+            //    Console.WriteLine(name);
+            //}
+            //Console.ReadLine();
+
+            ////-----------------------------------------------------------------------------------------------////
+
+            ////Assignment 18. LINQ to Objects 
+            ////Question: Write a LINQ query to find the sum of all even numbers in an array of integers.
+
+            //int[] numbers = { 1, 2, 4, 8, 3, 6 };
+            //var sumOfEven = numbers.Where(num => num % 2 == 0).Sum(x => x);
+            //Console.WriteLine("Sum of even numbers is: "+sumOfEven);
+            //Console.ReadLine();
+
+            ////-----------------------------------------------------------------------------------------------////
+
+            ////Assignment 19. LINQ to XML 
+            ////Question: Create an XML document representing a list of books, and use LINQ to XML to
+            ////query the titles of books published after 2015.
+
+            XDocument xmlDocument = XDocument.Load("D:\\c-sharp-2509\\CsharpAssignmentsPart7\\Books.xml");
+            Console.ReadLine();
 
 
 

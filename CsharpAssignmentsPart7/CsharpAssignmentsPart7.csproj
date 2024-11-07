@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="10.cs" />
+    <Compile Include="11.cs" />
+    <Compile Include="12.cs" />
+    <Compile Include="13.cs" />
+    <Compile Include="15.cs" />
     <Compile Include="3.cs" />
     <Compile Include="4.cs" />
     <Compile Include="5.cs" />
@@ -53,6 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Books.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
