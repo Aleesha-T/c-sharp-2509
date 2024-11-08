@@ -71,7 +71,7 @@ namespace CsharpAssignmentsPart7
             //Console.WriteLine("Enter 1 for addition, 2 for subtraction, 3 for multiplication, 4 for division.");
             //int choice = Convert.ToInt32(Console.ReadLine());
             //Console.WriteLine("Enter two numbers.");
-            //int firstNumber= Convert.ToInt32(Console.ReadLine());
+            //int firstNumber = Convert.ToInt32(Console.ReadLine());
             //int secondNumber = Convert.ToInt32(Console.ReadLine());
             //switch (choice)
             //{
@@ -131,8 +131,8 @@ namespace CsharpAssignmentsPart7
             //Console.WriteLine("Enter two numbers.");
             //int firstNumber = Convert.ToInt32(Console.ReadLine());
             //int secondNumber = Convert.ToInt32(Console.ReadLine());
-            //Func<int,int,int> multiply = (x,y)=> x*y;
-            //Console.WriteLine("Product is: "+multiply(firstNumber, secondNumber));
+            //Func<int, int, int> multiply = (x, y) => x * y;
+            //Console.WriteLine("Product is: " + multiply(firstNumber, secondNumber));
             //Console.ReadLine();
 
             ////-----------------------------------------------------------------------------------------------////
@@ -141,14 +141,14 @@ namespace CsharpAssignmentsPart7
             ////Question:
             ////Create an expression tree for a lambda expression that adds two integers.Compile and execute the expression.
 
-            //Expression <Func<int,int,int>> expression=(a,b) => a + b;
+            //Expression<Func<int, int, int>> expression = (a, b) => a + b;
             ////Expression tree.
             //Console.WriteLine(expression);
             ////Outputs the expression.
 
             //var compiledExpression = expression.Compile();
             ////Compiles the expression.
-            //Console.WriteLine("Result: " +compiledExpression(2,4));
+            //Console.WriteLine("Result: " + compiledExpression(2, 4));
             //Console.ReadLine();
 
             ////-----------------------------------------------------------------------------------------------////
@@ -161,13 +161,13 @@ namespace CsharpAssignmentsPart7
 
             //StringOperationDelegate stringOperation = new StringOperationDelegate(Upper);
             //string result1 = stringOperation("Aleesha");
-            //Console.WriteLine("In upper case: "+result1);
+            //Console.WriteLine("In upper case: " + result1);
             //stringOperation += Reverse;
             //string result2 = stringOperation("Aleesha");
-            //Console.WriteLine("Reversed string: "+result2); 
+            //Console.WriteLine("Reversed string: " + result2);
             //stringOperation += AddPrefix;
             //string result3 = stringOperation("Aleesha");
-            //Console.WriteLine("String after prefixing: "+result3);
+            //Console.WriteLine("String after prefixing: " + result3);
             //Console.ReadLine();
 
             ////-----------------------------------------------------------------------------------------------////
@@ -196,7 +196,7 @@ namespace CsharpAssignmentsPart7
             ////Order according to price.
             //foreach (var item in ordered)
             //{
-            //    Console.WriteLine("Name: "+item.Name+", Price: "+item.Price);
+            //    Console.WriteLine("Name: " + item.Name + ", Price: " + item.Price);
             //}
             ////Display the filtered and ordered.
             //Console.ReadLine();
@@ -210,7 +210,7 @@ namespace CsharpAssignmentsPart7
             ////integers and a delegate as parameters.Use the delegate to perform addition and subtraction
             ////operations by passing different methods.
 
-            //CalculationDelegate calculation = null; 
+            //CalculationDelegate calculation = null;
             //Calculate(4, 2, calculation);
             //Console.ReadLine();
 
@@ -237,10 +237,10 @@ namespace CsharpAssignmentsPart7
 
             //try
             //{
-            //    string url = /*"https://www.w3schools.com/";*/ "www.example.com";
+            //    string url = "https://www.w3schools.com/"; /*"www.example.com";*/
             //    Download.Call(url);
             //}
-            //catch(Exception e)
+            //catch (Exception e)
             //{
             //    Console.WriteLine(e.Message);
             //}
@@ -301,14 +301,14 @@ namespace CsharpAssignmentsPart7
             ////Question: Write a LINQ query using both query syntax and method syntax to retrieve all
             ////numbers greater than 5 from a list of integers.
 
-            //List <int> numbers = new List<int> { 3, 5, 1, 4, 6, 8, 10, 32, 41, 3, 6 };
+            //List<int> numbers = new List<int> { 3, 5, 1, 4, 6, 8, 10, 32, 41, 3, 6 };
             ////List of integers.
-            //var results = from number in numbers where number>5 select number;
+            //var results = from number in numbers where number > 5 select number;
             ////Query syntax.
             //Console.WriteLine("Numbers greater than 5 are:");
-            //foreach(var result in results)
+            //foreach (var result in results)
             //{
-            //    Console.Write(result+" ");
+            //    Console.Write(result + " ");
             //}
             ////Displaying results.
             //var newResults = numbers.Where(x => x > 5);
@@ -329,7 +329,7 @@ namespace CsharpAssignmentsPart7
 
             //List<string> studentNames = new List<string> { "Aleesha", "Ameya", "Riya", "Aisha", "Becca", "Julie" };
             ////List of names.
-            //var names = studentNames.Where(x => x[0] == 'A').OrderBy(x=>x);
+            //var names = studentNames.Where(x => x[0] == 'A').OrderBy(x => x);
             ////Selects names starting with A and orders them alphabetically.
             //Console.WriteLine("Filtered and ordered list:");
             //foreach (var name in names)
@@ -345,7 +345,7 @@ namespace CsharpAssignmentsPart7
 
             //int[] numbers = { 1, 2, 4, 8, 3, 6 };
             //var sumOfEven = numbers.Where(num => num % 2 == 0).Sum(x => x);
-            //Console.WriteLine("Sum of even numbers is: "+sumOfEven);
+            //Console.WriteLine("Sum of even numbers is: " + sumOfEven);
             //Console.ReadLine();
 
             ////-----------------------------------------------------------------------------------------------////
@@ -354,8 +354,37 @@ namespace CsharpAssignmentsPart7
             ////Question: Create an XML document representing a list of books, and use LINQ to XML to
             ////query the titles of books published after 2015.
 
-            XDocument xmlDocument = XDocument.Load("D:\\c-sharp-2509\\CsharpAssignmentsPart7\\Books.xml");
-            Console.ReadLine();
+            //XDocument xmlDocument = XDocument.Load("D:\\c-sharp-2509\\CsharpAssignmentsPart7\\Books.xml");
+            //var books = xmlDocument.Descendants("Book")
+            //                       .Where(book => (int)book.Element("Year") > 2015)
+            //                       .Select(book => book.Element("Title").Value);
+            //Console.WriteLine("Books published after 2015:");
+            //foreach (var book in books)
+            //{
+            //    Console.WriteLine(book);
+            //}
+            //Console.ReadLine();
+
+            ////-----------------------------------------------------------------------------------------------////
+
+            ////Assignment 20. LINQ to SQL 
+            ////Question: Given a database table Employees with columns ID, Name, and Department, write a
+            ////LINQ to SQL query to select all employees from the "IT" department.
+
+            //var itEmployees = from emp in db.Employees
+            //                  where emp.Department == "IT"
+            //                  select emp;
+            ////Selecting employees in IT Department.
+            //foreach (var emp in itEmployees)
+            //{
+            //    Console.WriteLine($"ID:{emp.ID}, Name: {emp.Name}, Department: {emp.Department}");
+            //}
+            ////Displaying details of IT Employees.
+            //Console.ReadLine();
+
+            ////-----------------------------------------------------------------------------------------------////
+
+
 
 
 

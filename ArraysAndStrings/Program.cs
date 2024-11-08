@@ -296,10 +296,10 @@ namespace ArraysAndStrings
 
             ////Assignment 18. Write a C# program to check if a string contains only digits.
 
-            //Console.WriteLine("Enter a string.");
-            //string inputString = Console.ReadLine();
-            //Check.CheckString(inputString);
-            //Console.ReadLine();
+            Console.WriteLine("Enter a string.");
+            string inputString = Console.ReadLine();
+            Check.CheckString(inputString);
+            Console.ReadLine();
 
             //-------------------------------------------------------------------------------------------------//
         }
