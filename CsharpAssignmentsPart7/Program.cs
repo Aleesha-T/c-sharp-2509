@@ -395,5 +395,6 @@ namespace CsharpAssignmentsPart7
         {
             Console.WriteLine("Counter complete");
         }
+        //This will be run when the event is invoked.
     }
 }
