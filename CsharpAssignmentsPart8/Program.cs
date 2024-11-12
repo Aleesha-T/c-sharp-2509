@@ -4,10 +4,11 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace CsharpAssignmentsPart8
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -175,15 +176,44 @@ namespace CsharpAssignmentsPart8
 
             ////-----------------------------------------------------------------------------------////
 
+            ////8. Text File Serialization and Deserialization with XML
+            ////Question:
+            ////Define a Book class with properties Title, Author, and ISBN. Write a program that serializes an
+            ////instance of Book to an XML file named "book.xml" and then deserializes it back, displaying the
+            ////details on the console.
 
+            //Book book = new Book { Title = "The Da Vinci Code", Author = "Dan Brown", ISBN = "978-456-741" };
+            //string filepath = "book.xml";
+            //XmlSerializer xmlSerializer = new XmlSerializer(typeof(Book));
+            //using (FileStream fileStream = new FileStream(filepath, FileMode.Create))
+            //{
+            //    xmlSerializer.Serialize(fileStream, book);
+            //}
+            ////Serialize to XML.
+            //Console.WriteLine("Book object serialized to xml.");
 
+            //Book deserializedBook;
+            //using (FileStream file = new FileStream(filepath, FileMode.Open))
+            //{
+            //    deserializedBook = (Book)xmlSerializer.Deserialize(file);
+            //}
+            ////Deserialize to book object.
+            //Console.WriteLine("After deserializing:");
+            //Console.WriteLine($"Title: {deserializedBook.Title}, Author: {deserializedBook.Author}, ISBN: {deserializedBook.ISBN}");
 
+            ////-----------------------------------------------------------------------------------////
 
+            ////9. Visual Studio Debugging Tools and NUnit
+            ////In 9.cs and CalculatorTests.cs
 
+            ////-----------------------------------------------------------------------------------////
 
+            ////10. NUnit Test for File Validation
+            ////In 10.cs and FileHelperTests.cs
 
+            ////-----------------------------------------------------------------------------------////
 
             Console.ReadLine();
-            }
+        }
     }
 }
